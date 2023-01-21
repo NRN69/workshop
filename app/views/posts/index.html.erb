@@ -1,0 +1,36 @@
+<main class="my-5">
+  <div class="container">
+    <div class="text-center">
+      <h1 class="mb-5"><%= link_to '+', new_post_path, class: 'btn btn-outline-dark' %><strong>Posts</strong></h1>
+      <div class="row">
+        <% @posts.each do |post| %>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <div class="img-fluid">
+                  <%= image_tag(post.img.url, size: '414x290') %>
+                </div>
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <%= post.title.capitalize %>
+                </h4>
+                <p class="card-text">
+                  <%= turbo_frame_tag post do %>
+                    <%= link_to 'Edit', edit_post_path(post) %>
+                    <%= link_to 'Delete', post, data: {turbo_method: :delete},turbo_confirm: 'Are you sure?'%>
+                    <%= link_to 'Read', post %>
+                  <% end %>
+                </p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+
+      <%= render 'posts/pagination' %>
+
+    </div>
+  </div>
+</main>

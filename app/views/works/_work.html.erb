@@ -1,0 +1,9 @@
+<%= turbo_frame_tag work do %>
+  <section class="mb-4">
+    <h2><%= work.title %></h2>
+    <p><%= work.body %></p>
+
+       <%= link_to 'Edit', edit_work_path, class: 'btn btn-outline-dark' %>
+
+  </section>
+<% end %>

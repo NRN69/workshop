@@ -1,0 +1,3 @@
+<%= turbo_stream.update Work.new, '' %>
+<%= turbo_stream.after Work.new, render(@work) %>
+<%= prepend_flash %>
