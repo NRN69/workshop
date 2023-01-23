@@ -13,8 +13,9 @@ class PostsController < ApplicationController
   def create
     @post = Post.new post_params
     if @post.save
-      redirect_to
-      flash.now[:success] = 'Post created!'
+      respond_to do |format|
+        format.turbo_stream { flash.now[:success] = 'Post create!' }
+      end
     else
       render :new
     end

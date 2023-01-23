@@ -1,0 +1,33 @@
+// Entry point for the build script in your package.json
+import "@hotwired/turbo-rails"
+import * as ActiveStorage from "@rails/activestorage"
+import * as bootstrap from "bootstrap"
+
+import Button from 'bootstrap/js/dist/button';
+import Collapse from 'bootstrap/js/dist/collapse';
+import Alert from 'bootstrap/js/dist/alert';
+import Carousel from 'bootstrap/js/dist/carousel';
+import Modal from 'bootstrap/js/dist/modal';
+import Popover from 'bootstrap/js/dist/popover';
+import ScrollSpy from 'bootstrap/js/dist/scrollspy';
+import Tab from 'bootstrap/js/dist/tab';
+import Tooltip from 'bootstrap/js/dist/tooltip';
+import Toast from 'bootstrap/js/dist/toast';
+
+
+export {
+    Alert,
+    Button,
+    Carousel,
+    Collapse,
+    Modal,
+    Popover,
+    ScrollSpy,
+    Tab,
+    Toast,
+    Tooltip,
+};
+
+
+ActiveStorage.start()
+bootstrap.start()

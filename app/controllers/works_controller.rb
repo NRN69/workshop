@@ -13,8 +13,10 @@ class WorksController < ApplicationController
   def create
     @work = Work.new work_params
     if @work.save
-      redirect_to
-      flash.now[:success] = 'Work created!'
+      respond_to do |format|
+        format.turbo_stream { flash.now[:success] = 'Work create!' }
+      end
+      redirect_to works_path
     else
       render :new
     end
@@ -35,7 +37,7 @@ class WorksController < ApplicationController
   def destroy
     @work.destroy
     respond_to do |format|
-      format.turbo_stream { flash.now[:success] = 'Work deleted!' }
+      format.turbo_stream { flash.now[:success] = 'Work destroy!' }
     end
   end
 
