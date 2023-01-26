@@ -1,4 +1,3 @@
-<%= turbo_stream_from post %>
 <%= turbo_frame_tag post do %>
   <%= form_with model: post do |f| %>
     <%= render 'shared/errors', object: post %>
@@ -25,6 +24,8 @@
 
     <div class="mb-4"><%= f.file_field :img %></div>
 
-    <p><%= f.submit 'Submit', class: 'btn btn-outline-dark' %></p>
+    <p><%= f.submit 'Submit', class: 'btn btn-outline-dark' %>
+    </p>
+
   <% end %>
 <% end %>

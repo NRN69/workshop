@@ -1,3 +1,5 @@
+<% provide :page_title, 'Post' %>
+<% currently_at %>
 <main class="my-5">
   <div class="container">
     <div class="text-center">
@@ -18,7 +20,7 @@
             </div>
             <div class="card-body">
               <h4 class="card-title">
-                <% @post.body %>
+                <%= @post.body %>
               </h4>
               <p class="card-text">
 

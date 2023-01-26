@@ -14,9 +14,11 @@ class WorksController < ApplicationController
     @work = Work.new work_params
     if @work.save
       respond_to do |format|
-        format.turbo_stream { flash.now[:success] = 'Work create!' }
+        format.html do
+          flash[:success] = 'Work create!'
+          redirect_to works_path
+        end
       end
-      redirect_to works_path
     else
       render :new
     end
@@ -28,16 +30,27 @@ class WorksController < ApplicationController
 
   def update
     if @work.update work_params
-      redirect_to works_path
+      respond_to do |format|
+        format.html do
+          flash[:success] = 'Work create!'
+          redirect_to works_path
+        end
+      end
     else
-      render :edit
+      render :edit, status: :unprocessable_entity
     end
   end
 
   def destroy
     @work.destroy
     respond_to do |format|
+      format.html do
+        flash[:success] = 'Work destroy!'
+        redirect_to works_path, status: :see_other
+      end
+
       format.turbo_stream { flash.now[:success] = 'Work destroy!' }
+
     end
   end
 

@@ -1,3 +1,5 @@
+<% provide :page_title, 'Work' %>
+<% currently_at 'Work'%>
 <main class="my-5">
   <div class="container">
     <div class="text-center">
@@ -20,7 +22,7 @@
               <h4 class="card-title">
                 <% @work.body.split(',').each do |line| %>
                   <ul>
-                    <li><%= line %></li>
+                    <li><%= image_tag "check-circle.svg", size: '50', class: 'mx-3' %><%= line %></li>
                   </ul>
                 <% end %>
               </h4>

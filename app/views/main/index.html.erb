@@ -1,28 +1,31 @@
+<% currently_at 'Home'%>
 <main class="my-5">
-  <div class="container">
-    <div class="text-center">
-      <h1 class="mb-5"><%= link_to '+', new_work_path, class: 'btn btn-outline-dark' %><strong>Works</strong></h1>
-      <div class="row">
-        <% @works.each do |work| %>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <div class="img-fluid">
-                  <%= image_tag(work.img.url, size: '414x290') %>
+  <section>
+    <div class="container">
+      <div class="text-center">
+        <div class="p-3"></div>
+        <div class="row">
+          <% @works.each do |work| %>
+            <div class="col-lg-4 col-md-6 mb-3">
+              <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <div class="img-fluid">
+                    <%= link_to image_tag(work.img.url, size: '414x290'), work_path(work) %>
+                  </div>
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </div>
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-              </div>
-              <div class="card-body">
-                <h2 class="card-title">
-                  <%= work.title.capitalize %>
-                </h2>
-                <p class="card-text"></p>
-                  <%= link_to 'Read', work %>
+                <div class="card-body">
+                  <h2 class="card-title">
+                    <%= link_to work.title.capitalize, work_path(work), class: 'text-decoration-none text-reset' %>
+                  </h2>
+                </div>
               </div>
             </div>
-          </div>
-        <% end %>
+          <% end %>
+        </div>
       </div>
+    </div>
+  </section>
 
       <!-- Boofer -->
       <div id="intro" class="p-5 text-center bg-white">
@@ -30,34 +33,35 @@
       <p class="mb-3"></p>
       </div>
       <!-- Boofer-->
-
-  <div class="container">
-    <div class="text-center">
-      <h1 class="mb-5"><%= link_to '+', new_post_path, class: 'btn btn-outline-dark' %><strong>Posts</strong></h1>
-      <div class="row">
-        <% @posts.each do |post| %>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <div class="img-fluid">
-                  <%= image_tag(post.img.url, size: '414x290') %>
+  <section class="my-4">
+    <div class="container">
+      <div class="text-center">
+        <h1 class="mb-5">
+          <strong>Posts</strong>
+        </h1>
+        <div class="row">
+          <% @posts.each do |post| %>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <div class="img-fluid">
+                    <%= link_to image_tag(post.img.url, size: '414x290'), post_path(post) %>
+                  </div>
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </div>
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <%= post.title.capitalize %>
-                </h4>
-                <p class="card-text"></p>
-                  <%= link_to 'Read', post %>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <%= link_to post.title.capitalize, post_path(post), class: 'text-decoration-none text-reset'%>
+                  </h4>
+                  <p class="card-text"></p>
+                    <%= link_to 'Read', post %>
+                </div>
               </div>
             </div>
-          </div>
-        <% end %>
+          <% end %>
+        </div>
+        <%= render 'posts/pagination' %>
       </div>
-
-      <%= render 'posts/pagination' %>
-
     </div>
-  </div>
+  </section>
 </main>

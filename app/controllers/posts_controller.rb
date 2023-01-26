@@ -14,7 +14,10 @@ class PostsController < ApplicationController
     @post = Post.new post_params
     if @post.save
       respond_to do |format|
-        format.turbo_stream { flash.now[:success] = 'Post create!' }
+        format.html do
+          flash[:success] = 'Post create!'
+          redirect_to posts_path
+        end
       end
     else
       render :new
@@ -27,15 +30,25 @@ class PostsController < ApplicationController
 
   def update
     if @post.update post_params
-      redirect_to posts_path
+      respond_to do |format|
+        format.html do
+          flash[:success] = 'Post create!'
+          redirect_to posts_path
+        end
+      end
     else
-      render :edit
+      render :edit, status: :unprocessable_entity
     end
   end
 
   def destroy
     @post.destroy
     respond_to do |format|
+      format.html do
+        flash[:success] = 'Post deleted!'
+        redirect_to posts_path, status: :see_other
+      end
+
       format.turbo_stream { flash.now[:success] = 'Post deleted!' }
     end
   end
