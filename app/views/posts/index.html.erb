@@ -6,7 +6,7 @@
       <h1 class="mb-5">
         <strong>Posts</strong>
         <%= link_to '+', new_post_path,
-                                   class: 'btn btn-outline-dark',
+                                   class: 'btn btn-outline-dark btn-sm',
                                    data: { turbo_frame: dom_id(Post.new) } %>
       </h1>
       <div class="my-3"
@@ -15,6 +15,6 @@
       <div class="row">
         <%= render 'post' %>
       </div>
-      <%= render 'posts/pagination' %>
+        <%= paginate @posts %>
     </div>
 </main>

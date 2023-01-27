@@ -6,7 +6,7 @@ class MainController < ApplicationController
 
   def index
     @works = Work.all.limit(3).order created_at: :desc
-    @posts = Post.order created_at: :desc
+    @posts = Post.order(created_at: :desc).page params[:page]
   end
 
   def set_page_options

@@ -1,4 +1,5 @@
 <% currently_at 'Home'%>
+
 <main class="my-5">
   <section>
     <div class="container">
@@ -10,13 +11,17 @@
               <div class="card">
                 <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                   <div class="img-fluid">
-                    <%= link_to image_tag(work.img.url, size: '414x290'), work_path(work) %>
+                    <%= link_to image_tag(work.img.url,
+                                          size: '414x290'), work_path(work) %>
                   </div>
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  <div class="mask"
+                       style="background-color: rgba(251, 251, 251, 0.15);">
+                  </div>
                 </div>
                 <div class="card-body">
                   <h2 class="card-title">
-                    <%= link_to work.title.capitalize, work_path(work), class: 'text-decoration-none text-reset' %>
+                    <%= link_to work.title.capitalize, work_path(work),
+                                class: 'text-decoration-none text-reset' %>
                   </h2>
                 </div>
               </div>
@@ -27,12 +32,8 @@
     </div>
   </section>
 
-      <!-- Boofer -->
-      <div id="intro" class="p-5 text-center bg-white">
-      <h1 class="mb-3 h2"></h1>
-      <p class="mb-3"></p>
-      </div>
-      <!-- Boofer-->
+      <div class="p-4"></div>
+
   <section class="my-4">
     <div class="container">
       <div class="text-center">
@@ -45,13 +46,17 @@
               <div class="card">
                 <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                   <div class="img-fluid">
-                    <%= link_to image_tag(post.img.url, size: '414x290'), post_path(post) %>
+                    <%= link_to image_tag(post.img.url,
+                                          size: '414x290'), post_path(post) %>
                   </div>
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  <div class="mask"
+                       style="background-color: rgba(251, 251, 251, 0.15);">
+                  </div>
                 </div>
                 <div class="card-body">
                   <h4 class="card-title">
-                    <%= link_to post.title.capitalize, post_path(post), class: 'text-decoration-none text-reset'%>
+                    <%= link_to post.title.capitalize, post_path(post),
+                                class: 'text-decoration-none text-reset'%>
                   </h4>
                   <p class="card-text"></p>
                     <%= link_to 'Read', post %>
@@ -60,7 +65,7 @@
             </div>
           <% end %>
         </div>
-        <%= render 'posts/pagination' %>
+        <%= paginate @posts %>
       </div>
     </div>
   </section>

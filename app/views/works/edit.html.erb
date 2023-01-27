@@ -19,13 +19,15 @@
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
             </div>
             <div class="card-body">
-              <h4 class="card-title">
+              <h1 class="card-title text-start mx-5 mt-5 mb-5">
                 <% @work.body.split(',').each do |line| %>
-                  <ul>
-                    <li><%= line %></li>
+                  <ul class="list-unstyled">
+                    <li><%= image_tag "check-circle.svg", size: '60', class: 'mx-4' %>
+                      <%= line.upcase %>
+                    </li>
                   </ul>
                 <% end %>
-              </h4>
+              </h1>
               <p class="card-text">
 
                 <%= render 'form', work: @work %>

@@ -3,4 +3,5 @@ class Work < ApplicationRecord
   validates :body, presence: true
   # validates :img, present: true
   mount_uploader :img, ImgUploader
+  belongs_to :user
 end
