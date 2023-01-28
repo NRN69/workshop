@@ -1,23 +1,23 @@
 <%= provide :main_menu do %>
-  <header class="p-2 bg-white text-white">
+  <header class="p-1 bg-white text-white">
     <div class="container-fluid">
       <nav class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-1 justify-content-center mb-md-0">
             <li>
-              <%= nav_tab 'Home', root_path,
+              <%= nav_tab image_tag("house-fill.svg", size: '22', alt: 'Home'), root_path,
                           class: "nav-link", current_page: current_page %>
             </li>
             <li>
               <%= nav_tab 'Works', works_path,
-                          class: 'nav-link px-2', current_page: current_page %>
+                          class: 'nav-link px-2 my-1', current_page: current_page %>
             </li>
             <li>
               <%= nav_tab 'Posts', posts_path,
-                          class: 'nav-link px-2', current_page: current_page %>
+                          class: 'nav-link px-2 my-1', current_page: current_page %>
             </li>
             <li>
               <%= nav_tab 'Contacts', contacts_path,
-                          class: 'nav-link px-2', current_page: current_page %>
+                          class: 'nav-link px-2 my-1', current_page: current_page %>
             </li>
         </ul>
         <ul class="nav col-12 col-lg-auto mb-2 mb-md-0">
@@ -48,16 +48,17 @@
 
                 <li>
                   <%= link_to 'Exit', destroy_user_session_path,
-                              class: 'dropdown-item', data: {turbo_method: :delete} %>
+                              class: 'dropdown-item',
+                              data: {turbo_method: :delete} %>
                 </li>
               </ul>
             </li>
           <% else %>
-            <li><%= nav_tab 'Enter', new_user_session_path,
-                            class: 'nav-link px-2', current_page: current_page %></li>
+            <li><button type="button" class="btn btn-default btn-circle btn-sm" data-bs-toggle="modal" data-bs-target="#sign_in">
+              <%= image_tag("person-circle.svg", size: '22') %></li>
 
-            <li><%= nav_tab 'Registration', new_user_registration_path,
-                            class: 'nav-link px-2', current_page: current_page %></li>
+                <%= render 'shared/sign_in' %>
+
           <% end %>
         </ul>
       </nav>

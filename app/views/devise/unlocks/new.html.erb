@@ -1,16 +1,37 @@
-<h2>Resend unlock instructions</h2>
+<% provide :page_title, 'SIGN IN' %>
+<% currently_at 'SIGN IN' %>
+<main class="my-5">
+  <div class="container">
+    <div class="text-center">
+      <h1 class="mb-5">
+        <strong>Resend unlock instructions</strong>
+      </h1>
+      <div class="row">
+        <div class="col-lg-12 col-md-6 mb-4">
 
-<%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+          <%= form_for(resource,
+                       as: resource_name,
+                       url: unlock_path(resource_name),
+                       html: { method: :post }) do |f| %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+            <%= render "devise/shared/error_messages", resource: resource %>
+
+            <div class="field">
+              <%= f.label :email %><br />
+              <%= f.email_field :email,
+                                autofocus: true,
+                                autocomplete: "email" %>
+            </div>
+
+            <div class="actions my-3">
+              <%= f.submit "Resend unlock instructions" %>
+            </div>
+          <% end %>
+
+          <%= render "devise/shared/links" %>
+
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="actions">
-    <%= f.submit "Resend unlock instructions" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</main>
