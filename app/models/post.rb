@@ -4,4 +4,5 @@ class Post < ApplicationRecord
   # validates :img, present: true
   mount_uploader :img, ImgUploader
   belongs_to :user
+  attr_accessor :user_id
 end

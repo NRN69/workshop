@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class WorksController < ApplicationController
 
   before_action :set_work!, only: %i[show destroy edit update]
@@ -7,11 +9,11 @@ class WorksController < ApplicationController
   end
 
   def new
-    @work = Work.new
+    @work = current_user.works.build
   end
 
   def create
-    @work = Work.new work_params
+    @work = current_user.works.build work_params
     if @work.save
       respond_to do |format|
         format.html do
