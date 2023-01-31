@@ -16,11 +16,14 @@
                       class: 'text-decoration-none text-reset' %>
         </h2>
         <p class="card-text text-end">
-          <%= link_to 'Edit', edit_work_path(work),
-                      class: 'btn btn-light btn-sm' %>
-          <%= link_to 'Delete', work_path(work),
-                      data: {turbo_method: :delete, turbo_confirm: "Are you sure?"},
-                      class: 'btn btn-light btn-sm' %>
+          <% if current_user.try(:admin) %>
+            <%= link_to t('global.button.edit'), edit_work_path(work),
+                        class: 'btn btn-light btn-sm' %>
+            <%= link_to t('global.button.delete'), work_path(work),
+                        data: {turbo_method: :delete,
+                               turbo_confirm: t('global.dialog.you_sure')},
+                        class: 'btn btn-light btn-sm' %>
+          <% end %>
         </p>
       </div>
     </div>

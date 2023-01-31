@@ -1,10 +1,10 @@
-<% provide :page_title, 'SIGN IN' %>
-<% currently_at 'SIGN IN' %>
+<% provide :page_title, t('devise.unlocks.title') %>
+<% currently_at t('devise.unlocks.title') %>
 <main class="my-5">
   <div class="container">
     <div class="text-center">
       <h1 class="mb-5">
-        <strong>Resend unlock instructions</strong>
+        <strong><%= t('devise.unlocks.title') %></strong>
       </h1>
       <div class="row">
         <div class="col-lg-12 col-md-6 mb-4">
@@ -24,7 +24,7 @@
             </div>
 
             <div class="actions my-3">
-              <%= f.submit "Resend unlock instructions" %>
+              <%= f.submit t('devise.unlocks.button') %>
             </div>
           <% end %>
 

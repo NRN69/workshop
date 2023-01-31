@@ -3,31 +3,47 @@
     <div class="modal-content text-dark">
       <div class="modal-header">
         <div class="container text-center">
-          <h1 class="modal-title fs-5" id="exampleModalLabel"><strong>SIGN IN</strong></h1></div>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            <strong><%= t('devise.sessions.new.title') %></strong>
+          </h1>
+        </div>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div class="container-fluid">
           <div class="row justify-content-center">
             <div class="col-md-6">
-              <%= form_for(User.new, url: session_path(:user), html:{id: 'sign_in_user', :'data-type' => 'json'}, remote: true) do |f| %>
+
+              <%= form_for(User.new,
+                           url: session_path(:user),
+                           html:{id: 'sign_in_user', :'data-type' => 'json'}, remote: true) do |f| %>
+
                 <div class="mb-3">
                   <%= f.label :email %><br />
-                  <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+                  <%= f.email_field :email,
+                                    autofocus: true,
+                                    autocomplete: "email" %>
                 </div>
+
                 <div class="mb-2">
                   <%= f.label :password %><br />
-                  <%= f.password_field :password, autocomplete: "current-password" %>
+                  <%= f.password_field :password,
+                                       autocomplete: t('devise.autocomplete.password') %>
                 </div>
+
                 <% if Devise.mappings[:user].rememberable? -%>
+
                   <div class="mb-3">
                     <%= f.check_box :remember_me %>
-                    <%= f.label :remember_me %>
+                    <%= f.label     :remember_me %>
                   </div>
                 <% end %>
+
                 <div class="mb-3">
-                  <%= f.submit 'Sign in', class: 'btn btn-dark btn-sm' %>
-                  <%= link_to 'Sign up',new_user_registration_path, class: 'btn btn-dark btn-sm' %>
+                  <%= f.submit t('devise.sessions.new.button'),
+                                class: 'btn btn-dark btn-sm' %>
+                  <%= link_to t('devise.registrations.new.button'),new_user_registration_path,
+                                class: 'btn btn-dark btn-sm' %>
                 </div>
               <% end %>
             </div>

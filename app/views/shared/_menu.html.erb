@@ -4,19 +4,19 @@
       <nav class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-1 justify-content-center mb-md-0">
             <li>
-              <%= nav_tab image_tag("house-fill.svg", size: '22', alt: 'Home'), root_path,
+              <%= nav_tab image_tag("house-fill.svg", size: '22', alt: t('menu.home')), root_path,
                           class: "nav-link", current_page: current_page %>
             </li>
             <li>
-              <%= nav_tab 'Works', works_path,
+              <%= nav_tab t('menu.works'), works_path,
                           class: 'nav-link px-2 my-1', current_page: current_page %>
             </li>
             <li>
-              <%= nav_tab 'Posts', posts_path,
+              <%= nav_tab t('menu.posts'), posts_path,
                           class: 'nav-link px-2 my-1', current_page: current_page %>
             </li>
             <li>
-              <%= nav_tab 'Contacts', contacts_path,
+              <%= nav_tab t('menu.contacts'), contacts_path,
                           class: 'nav-link px-2 my-1', current_page: current_page %>
             </li>
         </ul>
@@ -45,14 +45,14 @@
 
               <ul class="dropdown-menu">
                 <li>
-                  <%= link_to 'Edit', edit_user_registration_path,
+                  <%= link_to t('menu.auth.sign_in.edit'), edit_user_registration_path,
                               class: 'dropdown-item' %>
                 </li>
 
                 <li><hr class="dropdown-divider"></li>
 
                 <li>
-                  <%= link_to 'Exit', destroy_user_session_path,
+                  <%= link_to t('menu.auth.sign_in.exit'), destroy_user_session_path,
                               class: 'dropdown-item',
                               data: {turbo_method: :delete} %>
                 </li>

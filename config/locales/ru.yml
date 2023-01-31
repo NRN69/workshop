@@ -1,11 +1,72 @@
 ru:
+  set_page_options:
+    page_title: 'Мастерская Миронежье'
+    page_description: 'Установка Ремонт Калибровка Заправка'
+    page_keywords: 'Автономные отопители Тахографы Кондиционеры'
+
+  global:
+    button:
+      delete: "Удалить"
+      edit: "Изменить"
+      show: "Показать"
+      submit: "Отправить"
+    dialog:
+      you_sure: "Вы уверены?"
+  main:
+    index:
+      posts:
+        title: "Статьи"
+
+  works:
+    index:
+      title: "Услуги"
+    show:
+      title: "Услуга"
+    edit:
+      title: "Редактирование"
+    new:
+      title: "Новая услуга"
+    create:
+      success: "Услуга добавлена!"
+    destroy:
+      success: "Услуга удалена!"
+
+  posts:
+    index:
+      title: "Статьи"
+    show:
+      title: "Статья"
+    edit:
+      title: "Редактирование"
+    new:
+      title: "Новая статья"
+    create:
+      success: "Статья добавлена!"
+    destroy:
+      success: "Статья удалена!"
+
+  contacts:
+    index:
+      title: "Контакты"
+
+  menu:
+    home: "Главная"
+    works: "Услуги"
+    posts: "Статьи"
+    contacts: "Контакты"
+    auth:
+      sign_in:
+        edit: "Изменить"
+        exit: "Выйти"
+
   errors:
     messages:
-      carrierwave_processing_error: "Не удается изменить размер изображения".
-      carrierwave_integrity_error: "Не изображение".
-      carrierwave_download_error: "Не удалось загрузить изображение".
+      carrierwave_processing_error: "Не удается изменить размер изображения."
+      carrierwave_integrity_error: "Не изображение."
+      carrierwave_download_error: "Не удалось загрузить изображение."
       extension_whitelist_error: "Нельзя загрузить файлы% {extension}, допустимые типы:% {allowed _ types}"
       extension_blacklist_error: "Нельзя загрузить файлы% {extension}, запрещенные типы:% {запрещенные _ типы}"
+
   views:
     pagination:
       first: "&laquo; Первая"

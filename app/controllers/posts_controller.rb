@@ -18,7 +18,7 @@ class PostsController < ApplicationController
     if @post.save
       respond_to do |format|
         format.html do
-          flash[:success] = 'Post create!'
+          flash[:success] = t('posts.create.success')
           redirect_to posts_path
         end
       end
@@ -35,7 +35,7 @@ class PostsController < ApplicationController
     if @post.update post_params
       respond_to do |format|
         format.html do
-          flash[:success] = 'Post create!'
+          flash[:success] = t('posts.create.success')
           redirect_to posts_path
         end
       end
@@ -48,11 +48,12 @@ class PostsController < ApplicationController
     @post.destroy
     respond_to do |format|
       format.html do
-        flash[:success] = 'Post deleted!'
+        flash[:success] = t('posts.destroy.success')
         redirect_to posts_path, status: :see_other
       end
 
-      format.turbo_stream { flash.now[:success] = 'Post deleted!' }
+      format.turbo_stream { flash.now[:success] = t('posts.destroy.success') }
+      redirect_to posts_path
     end
   end
 

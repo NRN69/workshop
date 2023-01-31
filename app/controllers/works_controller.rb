@@ -17,7 +17,7 @@ class WorksController < ApplicationController
     if @work.save
       respond_to do |format|
         format.html do
-          flash[:success] = 'Work create!'
+          flash[:success] = t('works.create.success')
           redirect_to works_path
         end
       end
@@ -34,7 +34,7 @@ class WorksController < ApplicationController
     if @work.update work_params
       respond_to do |format|
         format.html do
-          flash[:success] = 'Work create!'
+          flash[:success] = t('works.create.success')
           redirect_to works_path
         end
       end
@@ -47,11 +47,12 @@ class WorksController < ApplicationController
     @work.destroy
     respond_to do |format|
       format.html do
-        flash[:success] = 'Work destroy!'
+        flash[:success] = t('works.destroy.success')
         redirect_to works_path, status: :see_other
       end
 
-      format.turbo_stream { flash.now[:success] = 'Work destroy!' }
+      format.turbo_stream { flash.now[:success] = t('works.destroy.success') }
+      redirect_to works_path
 
     end
   end

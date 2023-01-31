@@ -15,12 +15,14 @@
           <%= post.title.capitalize %>
         </h2>
         <p class="card-text text-end mx-5">
-          <%= link_to 'Edit', edit_post_path(post),
-                      class: 'btn btn-light btn-sm' %>
-          <%= link_to 'Delete', post_path(post),
-                      data: {turbo_method: :delete, turbo_confirm: "Are you sure?"},
-                      class: 'btn btn-light btn-sm' %>
-          <%= link_to 'Read', post_path(post) %>
+          <% if current_user.try(:admin) %>
+            <%= link_to t('global.button.edit'), edit_post_path(post),
+                        class: 'btn btn-light btn-sm' %>
+            <%= link_to t('global.button.delete'), post_path(post),
+                        data: {turbo_method: :delete, turbo_confirm: t('global.dialog.you_sure')},
+                        class: 'btn btn-light btn-sm' %>
+          <% end %>
+          <%= link_to t('global.button.show'), post_path(post) %>
         </p>
       </div>
     </div>

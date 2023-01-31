@@ -1,13 +1,15 @@
-<% provide :page_title, 'Works' %>
-<% currently_at 'Works'%>
+<% provide :page_title, t('works.index.title') %>
+<% currently_at t('menu.works') %>
 <main class="my-5">
   <div class="container">
     <div class="text-center">
       <h1 class="mb-5">
-        <strong>Works</strong>
-        <%= link_to '+', new_work_path,
-                                   class: 'btn btn-outline-dark btn-sm',
-                                   data: { turbo_frame: dom_id(Work.new) } %>
+        <strong><%= t('works.index.title') %></strong>
+        <% if current_user.try(:admin) %>
+          <%= link_to '+', new_work_path,
+                                     class: 'btn btn-outline-dark btn-sm',
+                                      data: { turbo_frame: dom_id(Work.new) } %>
+          <% end %>
       </h1>
         <div class="my-3"
           <%= turbo_frame_tag Work.new %>

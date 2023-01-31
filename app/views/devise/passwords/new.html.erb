@@ -1,10 +1,10 @@
-<% provide :page_title, 'Forgot your password?' %>
-<% currently_at 'Forgot your password?' %>
+<% provide :page_title, t('devise.passwords.new.title') %>
+<% currently_at t('devise.passwords.new.title') %>
 <main class="my-5">
   <div class="container">
     <div class="text-center">
       <h1 class="mb-5">
-        <strong>Forgot your password?</strong>
+        <strong><%= t('devise.passwords.new.title') %>></strong>
       </h1>
       <div class="row">
         <div class="col-lg-12 col-md-6 mb-4">
@@ -22,7 +22,8 @@
               </div>
 
               <div class="actions my-3">
-                <%= f.submit "Send me reset password instructions" %>
+                <%= f.submit t('devise.passwords.new.button'),
+                             class: 'btn btn-dark' %>
               </div>
             <% end %>
 

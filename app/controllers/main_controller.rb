@@ -10,8 +10,8 @@ class MainController < ApplicationController
   end
 
   def set_page_options
-    @page_title = 'Workshop'
-    @page_description = 'Workshop Trucks Electronics'
-    @page_keywords = 'Heater Tachograph Condition'
+    @page_title = t('set_page_options.page_title')
+    @page_description = t('set_page_options.page_description')
+    @page_keywords = t('set_page_options.page_keywords')
   end
 end

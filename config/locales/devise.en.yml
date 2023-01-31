@@ -1,6 +1,8 @@
 en:
   devise:
     confirmations:
+      title: "Resend confirmation instructions"
+      button: "Resend confirmation instructions"
       confirmed: "Your email address has been successfully confirmed."
       send_instructions: "You will receive an email with instructions for how to confirm your email address in a few minutes."
       send_paranoid_instructions: "If your email address exists in our database, you will receive an email with instructions for how to confirm your email address in a few minutes."
@@ -16,25 +18,59 @@ en:
       unconfirmed: "You have to confirm your email address before continuing."
     mailer:
       confirmation_instructions:
+        title: "Welcome"
+        text: "You can confirm your account email through the link below:"
+        button: "Confirm my account"
         subject: "Confirmation instructions"
       reset_password_instructions:
+        title: "Hello"
+        text_top: "Someone has requested a link to change your password. You can do this through the link below."
+        text_middle: "If you didn't request this, please ignore this email."
+        text_down: "Your password won't change until you access the link above and create a new one."
+        button: "Change my password"
         subject: "Reset password instructions"
       unlock_instructions:
+        title: "Hello"
+        text_top: "Your account has been locked due to an excessive number of unsuccessful sign in attempts."
+        text_down: "Click the link below to unlock your account:"
+        button: "Unlock my account"
         subject: "Unlock instructions"
       email_changed:
+        title: "Hello"
+        text_unconfirmed: "We're contacting you to notify you that your email is being changed to"
+        text: "We're contacting you to notify you that your email has been changed to"
         subject: "Email Changed"
       password_change:
+        title: "Hello"
+        text: "We're contacting you to notify you that your password has been changed."
         subject: "Password Changed"
     omniauth_callbacks:
       failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
       success: "Successfully authenticated from %{kind} account."
     passwords:
+      edit:
+        title: "Change your password"
+        button: "Change my password"
+        password: "New password"
+        password_confirmation: "Confirm new password"
+      new:
+        title: "Forgot your password?"
+        button: "Send me reset password instructions"
       no_token: "You can't access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided."
       send_instructions: "You will receive an email with instructions on how to reset your password in a few minutes."
       send_paranoid_instructions: "If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes."
       updated: "Your password has been changed successfully. You are now signed in."
       updated_not_active: "Your password has been changed successfully."
     registrations:
+      edit:
+        title: "Edit"
+        cancel: "Cancel my account"
+        unhappy: "Unhappy?"
+        button_cancel: "Cancel my account"
+        button: "Back"
+      new:
+        button: "Sign Up"
+        title: "SIGN UP"
       destroyed: "Bye! Your account has been successfully cancelled. We hope to see you again soon."
       signed_up: "Welcome! You have signed up successfully."
       signed_up_but_inactive: "You have signed up successfully. However, we could not sign you in because your account is not yet activated."
@@ -44,13 +80,30 @@ en:
       updated: "Your account has been updated successfully."
       updated_but_not_signed_in: "Your account has been updated successfully, but since your password was changed, you need to sign in again."
     sessions:
+      new:
+        button: "Sign in"
+        title: "SIGN IN"
       signed_in: "Signed in successfully."
       signed_out: "Signed out successfully."
       already_signed_out: "Signed out successfully."
     unlocks:
+      title: "Resend unlock instructions"
+      button: "Resend unlock instructions"
       send_instructions: "You will receive an email with instructions for how to unlock your account in a few minutes."
       send_paranoid_instructions: "If your account exists, you will receive an email with instructions for how to unlock it in a few minutes."
       unlocked: "Your account has been unlocked successfully. Please sign in to continue."
+    link:
+      sign_in: "Sign in"
+      sign_up: "Sign up"
+      forgot_password: "Forgot your password?"
+      confirmation_instructions: "Didn't receive confirmation instructions?"
+      unlock_instructions: "Didn't receive unlock instructions?"
+      omniauth: "Sign in with"
+    autocomplete:
+      new-password: "new-password"
+      password_confirm: "password_confirm"
+      current-password: "current-password"
+      password: "password"
   errors:
     messages:
       already_confirmed: "was already confirmed, please try signing in"

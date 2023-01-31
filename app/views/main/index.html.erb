@@ -1,4 +1,4 @@
-<% currently_at 'Home'%>
+<% currently_at t('menu.home') %>
 
 <main class="my-5">
   <section>
@@ -38,7 +38,7 @@
     <div class="container">
       <div class="text-center">
         <h1 class="mb-5">
-          <strong>Posts</strong>
+          <strong><%= t('menu.posts') %></strong>
         </h1>
         <div class="row">
           <% @posts.each do |post| %>
@@ -58,8 +58,9 @@
                     <%= link_to post.title.capitalize, post_path(post),
                                 class: 'text-decoration-none text-reset'%>
                   </h4>
-                  <p class="card-text"></p>
-                    <%= link_to 'Read', post %>
+                  <p class="card-text text-end mx-5">
+                    <%= link_to t('global.button.show'), post_path(post) %>
+                  </p>
                 </div>
               </div>
             </div>

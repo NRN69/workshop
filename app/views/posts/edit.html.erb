@@ -1,4 +1,4 @@
-<% provide :page_title, 'Edit Post' %>
+<% provide :page_title, t('posts.edit.title') %>
 <% currently_at %>
 <main class="my-5">
   <div class="container">
@@ -20,7 +20,7 @@
             </div>
             <div class="card-body">
               <h4 class="card-title">
-                <% @post.body %>
+                <%= @post.body %>
               </h4>
               <p class="card-text">
 
