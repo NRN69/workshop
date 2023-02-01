@@ -1,4 +1,13 @@
 ru:
+  activerecord:
+    attributes:
+      post:
+        title: "Название"
+        body: "Текст"
+      work:
+        title: "Название"
+        body: "Текст"
+
   set_page_options:
     page_title: 'Мастерская Миронежье'
     page_description: 'Установка Ремонт Калибровка Заправка'
