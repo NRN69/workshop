@@ -1,31 +1,43 @@
 <% @works.each do |work|  %>
-  <div class="col-lg-4 col-md-6 mb-4">
+  <div class="col-xl-4 col-md-6 mb-4">
     <div class="card">
-      <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-        <div class="img-fluid">
-          <%= link_to image_tag(work.img.url,
-                                size: '414x290'), work_path(work) %>
-        </div>
-        <div class="mask"
-             style="background-color: rgba(251, 251, 251, 0.15);">
-        </div>
-      </div>
-      <div class="card-body">
-        <h2 class="card-title">
-          <%= link_to work.title.capitalize, work_path(work),
-                      class: 'text-decoration-none text-reset' %>
-        </h2>
-        <p class="card-text text-end">
-          <% if current_user.try(:admin) %>
-            <%= link_to t('global.button.edit'), edit_work_path(work),
-                        class: 'btn btn-light btn-sm' %>
-            <%= link_to t('global.button.delete'), work_path(work),
-                        data: {turbo_method: :delete,
-                               turbo_confirm: t('global.dialog.you_sure')},
-                        class: 'btn btn-light btn-sm' %>
-          <% end %>
-        </p>
-      </div>
+      <figure class="snip">
+        <%= image_tag(work.img.url,
+                            size: '400x300', alt: 'no_image') %>
+        <figcaption>
+          <h2><span>
+
+            <%= work.title.capitalize %>
+
+          </span></h2>
+          <p>
+            <% work.body.split(',').each do |line| %>
+                <p>
+              <%= line.upcase %>
+                </p>
+            <% end %>
+            <%= link_to '', work_path(work),
+                            class: 'text-decoration-none text-reset' %>
+          <p><strong>
+
+            <% if current_user.try(:admin) %>
+              <%= link_to t('global.button.edit').upcase, edit_work_path(work),
+                            class: 'text-start my-2' %>
+              <%= link_to t('global.button.delete').upcase, work_path(work),
+                            data: {turbo_method: :delete,
+                                    turbo_confirm: t('global.dialog.you_sure')},
+                            class: 'text-center my-2' %>
+            <% end %>
+
+          </strong>
+          <h2 class="text-end">
+
+            <%= link_to "🡪", work_path(work),
+                            class: 'text-decoration-none text-reset' %>
+
+          </h2>
+        </figcaption>
+      </figure>
     </div>
   </div>
 <% end %>

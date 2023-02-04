@@ -68,8 +68,8 @@ ru:
         edit: "Изменить"
         exit: "Выйти"
 
-  en: "Английский"
-  ru: "Русский"
+  en: "EN"
+  ru: "RU"
 
   errors:
     messages:

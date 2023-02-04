@@ -59,6 +59,9 @@ class PostsController < ApplicationController
 
   private
 
+  def formatted_created_at
+    created_at.strftime('%Y-%m-%d %H:%M:%S')
+  end
   def set_post!
     @post = Post.find params[:id]
   end

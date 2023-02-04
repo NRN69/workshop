@@ -23,31 +23,6 @@ export default class extends Controller {
     }
 }
 
-import Button from 'bootstrap/js/dist/button';
-import Collapse from 'bootstrap/js/dist/collapse';
-import Alert from 'bootstrap/js/dist/alert';
-import Carousel from 'bootstrap/js/dist/carousel';
-import Modal from 'bootstrap/js/dist/modal';
-import Popover from 'bootstrap/js/dist/popover';
-import ScrollSpy from 'bootstrap/js/dist/scrollspy';
-import Tab from 'bootstrap/js/dist/tab';
-import Tooltip from 'bootstrap/js/dist/tooltip';
-import Toast from 'bootstrap/js/dist/toast';
 
-
-export {
-    Alert,
-    Button,
-    Carousel,
-    Collapse,
-    Modal,
-    Popover,
-    ScrollSpy,
-    Tab,
-    Toast,
-    Tooltip,
-};
-
-
-ActiveStorage.start()
-bootstrap.start()
+ActiveStorage.start();
+bootstrap.start();

@@ -1,30 +1,42 @@
 <% @posts.each do |post|  %>
   <div class="col-lg-4 col-md-6 mb-4">
     <div class="card">
-      <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-        <div class="img-fluid">
-          <%= image_tag(post.img.url,
-                        size: '414x290') %>
-        </div>
-        <div class="mask"
-             style="background-color: rgba(251, 251, 251, 0.15);">
-        </div>
-      </div>
-      <div class="card-body">
-        <h2 class="card-title">
-          <%= post.title.capitalize %>
-        </h2>
-        <p class="card-text text-end mx-5">
-          <% if current_user.try(:admin) %>
-            <%= link_to t('global.button.edit'), edit_post_path(post),
-                        class: 'btn btn-light btn-sm' %>
-            <%= link_to t('global.button.delete'), post_path(post),
-                        data: {turbo_method: :delete, turbo_confirm: t('global.dialog.you_sure')},
-                        class: 'btn btn-light btn-sm' %>
-          <% end %>
-          <%= link_to t('global.button.show'), post_path(post) %>
-        </p>
-      </div>
+      <figure class="snip">
+
+        <%= image_tag(post.img.url,
+                              size: '400x300', alt: 'no_image') %>
+        <figcaption>
+          <h2><span>
+
+            <%= post.title.capitalize %>
+          </span>
+          </h2>
+          <p>
+            <%= post.body.truncate(125, separator: ' ') %>
+          </p>
+
+            <%= link_to '', post_path(post),
+                              class: 'text-decoration-none text-reset' %>
+          <p><strong>
+
+            <% if current_user.try(:admin) %>
+              <%= link_to t('global.button.edit').upcase, edit_post_path(post),
+                              class: 'text-start my-2' %>
+              <%= link_to t('global.button.delete').upcase, post_path(post),
+                              data: {turbo_method: :delete,
+                                      turbo_confirm: t('global.dialog.you_sure')},
+                              class: 'text-center my-2' %>
+            <% end %>
+
+            </strong>
+          <h2 class="text-end">
+
+            <%= link_to "🡪", post_path(post),
+                              class: 'text-decoration-none text-reset' %>
+
+          </h2>
+        </figcaption>
+      </figure>
     </div>
   </div>
 <% end %>
