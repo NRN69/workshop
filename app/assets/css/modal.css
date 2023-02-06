@@ -1,0 +1,55 @@
+.modal-img {
+    color: white;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+.modal .field {
+    text-align: center;
+    border: #636464;
+    border-radius: 0;
+    padding: 10px;
+    margin-left: -100px;
+    width: 400px;
+    background-color: white;
+}
+.modal.form-group {
+    margin-left: 50px;
+}
+.modal .modal-title {
+    text-align: left;
+}
+.modal .form-check-input:checked {
+    background-color: #07080e;
+    border-color: #07080e;
+}
+.modal .btn {
+    border-radius: 20px;
+    width: 400px;
+    margin-left: -100px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.modal .forgot {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666666;
+    margin-top: 5px;
+    margin-left: 400px;
+}
+.modal .sign_up {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666666;
+    margin-top: 200px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.modal .title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}

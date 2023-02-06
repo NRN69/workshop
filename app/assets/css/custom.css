@@ -1,11 +1,8 @@
 @import url('snip.css');
-@font-face {
-    font-family: 'HelveticaNeueL';
-    src: url('HelveticaNeueL.ttf');
-}
-.dropdown-menu {
-    --bs-dropdown-min-width: 22px !important;
-}
+@import url('modal.css');
+@import url('carousel.css');
+@import url('dropdown.css');
+
 .card {
     --bs-card-border-width: 0px !important;
     --bs-card-border-radius: 1rem !important;
@@ -13,10 +10,8 @@
 .img_tag-style {
     border-radius: 50px;
 }
-.post-date {
-    color: #878096 !important;
-
-}
-.body {
-    font-family: 'HelveticaNeueL', Arial, sans-serif !important;
+.container .btn {
+    border-radius: 20px;
+    padding: 8px;
+    min-width: 150px;
 }

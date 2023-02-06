@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
@@ -14,7 +16,6 @@ rescue ActiveRecord::PendingMigrationError => e
 end
 
 RSpec.configure do |config|
-
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
   config.iclude FactoryBot::Syntax::Methods
   config.before(scope(:suite)) do

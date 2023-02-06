@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class MainController < ApplicationController
-
   before_action :set_page_options
 
   def index

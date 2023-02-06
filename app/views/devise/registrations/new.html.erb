@@ -21,7 +21,8 @@
             <div class="field my-0">
               <%= f.email_field :email,
                                 autofocus: true,
-                                autocomplete: "email" %>
+                                autocomplete: "email",
+                                placeholder: 'Email' %>
             </div>
 
             <div class="field my-1">
@@ -29,7 +30,9 @@
             </div>
             <div class="field my-2">
               <%= f.password_field :password,
-                                   autocomplete: t('devise.autocomplete.new-password') %>
+                                   autocomplete: t('devise.autocomplete.new-password'),
+                                   placeholder: t('devise.autocomplete.new-password') %>
+
               <% if @minimum_password_length %></br>
                 <em><%= "#{@minimum_password_length} #{t('devise.registrations.edit.minimum')}" %></em>
               <% end %>
@@ -40,7 +43,8 @@
             </div>
             <div class="field my-2">
               <%= f.password_field :password_confirmation,
-                                   autocomplete: t('devise.autocomplete.password_confirm') %>
+                                   autocomplete: t('devise.autocomplete.password_confirm'),
+                                   placeholder: t('devise.autocomplete.password_confirm') %>
             </div>
 
             <div class="actions my-3">

@@ -9,8 +9,8 @@ module Internationalization
     private
 
     def switch_locale(&action)
-      locale = locale_from_url  || I18n.default_locale
-      I18n.with_locale locale,  &action
+      locale = locale_from_url || I18n.default_locale
+      I18n.with_locale locale, &action
     end
 
     def locale_from_url
@@ -21,6 +21,5 @@ module Internationalization
     def default_url_options
       { locale: I18n.locale }
     end
-
   end
 end

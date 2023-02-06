@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 class PostsController < ApplicationController
-
-
   before_action :set_post!, only: %i[show destroy edit update]
 
   def index
@@ -62,6 +60,7 @@ class PostsController < ApplicationController
   def formatted_created_at
     created_at.strftime('%Y-%m-%d %H:%M:%S')
   end
+
   def set_post!
     @post = Post.find params[:id]
   end
@@ -69,5 +68,4 @@ class PostsController < ApplicationController
   def post_params
     params.require(:post).permit(:title, :body, :img)
   end
-
 end

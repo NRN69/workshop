@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class WorksController < ApplicationController
-
   before_action :set_work!, only: %i[show destroy edit update]
 
   def index
@@ -53,7 +52,6 @@ class WorksController < ApplicationController
 
       format.turbo_stream { flash.now[:success] = t('works.destroy.success') }
       redirect_to works_path
-
     end
   end
 
@@ -66,5 +64,4 @@ class WorksController < ApplicationController
   def work_params
     params.require(:work).permit(:title, :body, :img)
   end
-
 end

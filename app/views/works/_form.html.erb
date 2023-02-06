@@ -23,8 +23,8 @@
         </div>
       </div>
 
-      <div class="mb-4">
-        <%= f.file_field :img %>
+      <div class="custom-file mb-4">
+        <%= f.file_field :img, class: 'custom-file-input' %>
       </div>
 
       <p><%= f.submit t('global.button.submit'), class: 'btn btn-dark' %></p>

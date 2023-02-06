@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Work < ApplicationRecord
   validates :title, presence: true
   validates :body, presence: true
