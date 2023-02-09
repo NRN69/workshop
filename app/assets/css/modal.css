@@ -7,22 +7,16 @@
 }
 .modal .field {
     text-align: center;
-    border: #636464;
     border-radius: 0;
+    border: none;
     padding: 10px;
     margin-left: -100px;
     width: 400px;
     background-color: white;
-}
-.modal.form-group {
-    margin-left: 50px;
+    border-bottom: 2px solid #d9d9d9 !important;
 }
 .modal .modal-title {
     text-align: left;
-}
-.modal .form-check-input:checked {
-    background-color: #07080e;
-    border-color: #07080e;
 }
 .modal .btn {
     border-radius: 20px;
@@ -32,18 +26,16 @@
     padding: 10px;
 }
 .modal .forgot {
-    text-align: left;
     font-size: 14px;
-    line-height: 1.5;
     color: #666666;
     margin-top: 5px;
-    margin-left: 400px;
+    text-align: right;
 }
 .modal .sign_up {
     font-size: 14px;
     line-height: 1.5;
     color: #666666;
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: 30px;
     margin-bottom: 30px;
 }
@@ -53,3 +45,45 @@
     margin-bottom: 50px;
     margin-top: 50px;
 }
+.modal input {
+    outline: none;
+    border: none;
+}
+
+.modal textarea {
+    outline: none;
+    border: none;
+}
+
+.modal textarea:focus, input:focus {
+    border-color: transparent !important;
+}
+.modal input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.modal input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+.modal input:focus::-moz-placeholder {
+    color: transparent;
+}
+.modal input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.modal textarea:focus::-webkit-input-placeholder { color:transparent; }
+.modal textarea:focus:-moz-placeholder { color:transparent; }
+.modal textarea:focus::-moz-placeholder { color:transparent; }
+.modal textarea:focus:-ms-input-placeholder { color:transparent; }
+
+.modal input::-webkit-input-placeholder { color: #adadad;}
+.modal input:-moz-placeholder { color: #adadad;}
+.modal input::-moz-placeholder { color: #adadad;}
+.modal input:-ms-input-placeholder { color: #adadad;}
+
+.modal textarea::-webkit-input-placeholder { color: #adadad;}
+.modal textarea:-moz-placeholder { color: #adadad;}
+.modal textarea::-moz-placeholder { color: #adadad;}
+.modal textarea:-ms-input-placeholder { color: #adadad;}

@@ -29,7 +29,7 @@
                   <%= f.password_field :password,
                                        autocomplete: t('devise.autocomplete.password'),
                                        class: "field",
-                                       placeholder: 'Email' %>
+                                       placeholder: t('devise.autocomplete.password') %>
                 </div>
                 <div class="forgot">
                   <%= link_to t('devise.link.forgot_password'), new_user_password_path, class: 'forgot' %>
@@ -39,6 +39,7 @@
                   <%= f.submit t('devise.sessions.new.button'),
                               class: 'btn btn-dark bt-sm' %>
                 </div>
+
                 <div class="sign_up">
                 <%= link_to t('devise.registrations.new.button_modal'),new_user_registration_path,
                               class: 'sign_up' %>

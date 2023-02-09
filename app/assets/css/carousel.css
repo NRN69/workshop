@@ -1,7 +1,15 @@
 .carousel-blur {
-    -webkit-filter: blur(2px);
+    -webkit-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(15px);
     -webkit-box-shadow: 0 25px 23px rgba(0, 0, 0, 0.15);
     box-shadow: 0 25px 23px rgba(0, 0, 0, 0.15);
+}
+.carousel h1 {
+    font-size: 120px;
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+.carousel p {
+    font-size: 40px;
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
 }

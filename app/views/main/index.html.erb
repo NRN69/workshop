@@ -27,7 +27,7 @@
 
                     <%= link_to '', work_path(work),
                                     class: 'text-decoration-none text-reset' %>
-                    <p><strong>
+                    <p><b>
 
                       <% if current_user.try(:admin) %>
                         <%= link_to t('global.button.edit').upcase, edit_work_path(work),
@@ -38,7 +38,7 @@
                                     class: 'text-center my-2' %>
                       <% end %>
 
-                    </strong>
+                    </b>
                     <h2 class="text-end">
 
                       <%= link_to "🡪", work_path(work),
@@ -82,7 +82,7 @@
 
                   <%= link_to '', post_path(post),
                                 class: 'text-decoration-none text-reset' %>
-                    <p><strong>
+                    <p><b>
 
                     <% if current_user.try(:admin) %>
                       <%= link_to t('global.button.edit').upcase, edit_post_path(post),
@@ -93,7 +93,7 @@
                                 class: 'text-center my-2' %>
                     <% end %>
 
-                    </strong>
+                    </b>
                     <h2 class="text-end">
 
                       <%= link_to "🡪", post_path(post),
