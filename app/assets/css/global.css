@@ -1,0 +1,21 @@
+.container .btn {
+    border-radius: 20px;
+    padding: 8px;
+    min-width: 150px;
+}
+
+.li {
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
+.container {
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
+.container strong {
+    font-size: 50px;
+}
+.card {
+    --bs-card-border-width: 0px !important;
+    --bs-card-border-radius: 1rem !important;
+}

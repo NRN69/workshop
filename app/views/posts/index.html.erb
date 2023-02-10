@@ -7,8 +7,8 @@
         <strong><%= t('posts.index.title') %></strong>
         <% if current_user.try(:admin) %>
           <%= link_to '+', new_post_path,
-                                     class: 'btn btn-outline-dark btn-sm',
-                                     data: { turbo_frame: dom_id(Post.new) } %>
+                      class: 'text-decoration-none text-reset',
+                      data: { turbo_frame: dom_id(Post.new) } %>
         <% end %>
       </h1>
       <div class="my-3"

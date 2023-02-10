@@ -2,28 +2,18 @@
 @import url('modal.css');
 @import url('carousel.css');
 @import url('dropdown.css');
+@import url('menu.css');
+@import url('global.css');
 
-.card {
-    --bs-card-border-width: 0px !important;
-    --bs-card-border-radius: 1rem !important;
-}
 .img_tag-style {
     border-radius: 50px;
 }
-.container .btn {
-    border-radius: 20px;
-    padding: 8px;
-    min-width: 150px;
+
+.img-fluid .image-post-show {
+    margin-left: -270px;
+    margin-top: 40px;
 }
-.nav {
-    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-}
-.li {
-    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-}
-.container {
-    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-}
-.container strong {
-    font-size: 50px;
+.img-fluid .image-work-show {
+    margin-left: -270px;
+    margin-top: 0;
 }

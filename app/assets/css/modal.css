@@ -7,6 +7,7 @@
 }
 .modal .field {
     text-align: center;
+    font-size: 18px;
     border-radius: 0;
     border: none;
     padding: 10px;
@@ -30,14 +31,16 @@
     color: #666666;
     margin-top: 5px;
     text-align: right;
+    font-weight: 300;
 }
 .modal .sign_up {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
     color: #666666;
     margin-top: 150px;
     margin-left: 30px;
     margin-bottom: 30px;
+    font-weight: 300;
 }
 .modal .title {
     font-size: 40px;

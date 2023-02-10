@@ -74,11 +74,11 @@
                   <figcaption>
                     <h2><span>
 
-                  <%= post.title.capitalize %>
+                  <%= sanitize post.title.capitalize %>
                     </span></h2>
                     <p>
-                      <%= post.body.truncate(125, separator: ' ') %>
-                    </p>
+                      <%= sanitize post.body.truncate(115, separator: ' ') %>
+                    </p><br>
 
                   <%= link_to '', post_path(post),
                                 class: 'text-decoration-none text-reset' %>

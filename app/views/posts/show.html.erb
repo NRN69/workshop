@@ -3,13 +3,13 @@
 <main class="my-5">
   <div class="container">
     <div class="text-center">
-      <h1 class="mb-5"><strong><%= @post.title %></strong></h1>
+      <h1 class="mb-5"><strong><%= @post.title.gsub('&nbsp;','') %></strong></h1>
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
               <div class="img-fluid">
-                <%= image_tag(@post.img.url, size: '414x290') %>
+                <%= image_tag(@post.img.url, size: '600x450', class: 'image-post-show') %>
               </div>
             </div>
           </div>
@@ -18,9 +18,9 @@
           <div class="card">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
             </div>
-            <div class="card-body">
+            <div class="card-body text-start">
               <h4 class="card-title">
-                <%= @post.body %>
+                <%= sanitize @post.body %>
               </h4>
               <p class="card-text">
 

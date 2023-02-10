@@ -7,7 +7,7 @@
         <strong><%= t('works.index.title') %></strong>
         <% if current_user.try(:admin) %>
           <%= link_to '+', new_work_path,
-                                     class: 'btn btn-outline-dark btn-sm',
+                                     class: 'text-decoration-none text-reset',
                                       data: { turbo_frame: dom_id(Work.new) } %>
           <% end %>
       </h1>

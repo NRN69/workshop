@@ -9,7 +9,7 @@
           <div class="card">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
               <div class="img-fluid">
-                <%= image_tag(@work.img.url, size: '414x290') %>
+                <%= image_tag(@work.img.url, size: '600x450', class: 'image-work-show') %>
               </div>
             </div>
           </div>
@@ -22,7 +22,7 @@
               <h1 class="card-title text-start mx-5 mt-5 mb-5">
                 <% @work.body.split(',').each do |line| %>
                   <ul class="list-unstyled">
-                    <li><%= image_tag "check-circle.svg", size: '60', class: 'mx-4' %>
+                    <li><%= image_tag "check-lg.svg", size: '60', class: 'mx-4' %>
                       <%= line.upcase %>
                     </li>
                   </ul>

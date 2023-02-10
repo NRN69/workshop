@@ -3,21 +3,21 @@
     <div class="container-fluid">
       <nav class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-1 justify-content-center mb-md-0">
-            <li>
+            <li class="image-menu">
               <%= nav_tab image_tag("house-fill.svg", size: '22', alt: t('menu.home')), root_path,
                           class: "nav-link", current_page: current_page %>
             </li>
-            <li>
+            <li class="menu-start">
               <%= nav_tab t('menu.works'), works_path,
-                          class: 'nav-link px-2 my-1', current_page: current_page %>
+                          class: 'nav-link', current_page: current_page %>
             </li>
-            <li>
+            <li class="menu-start">
               <%= nav_tab t('menu.posts'), posts_path,
-                          class: 'nav-link px-2 my-1', current_page: current_page %>
+                          class: 'nav-link', current_page: current_page %>
             </li>
-            <li>
+            <li class="menu-start">
               <%= nav_tab t('menu.contacts'), contacts_path,
-                          class: 'nav-link px-2 my-1', current_page: current_page %>
+                          class: 'nav-link', current_page: current_page %>
             </li>
         </ul>
 
@@ -30,7 +30,7 @@
 
             <ul class="dropdown-menu">
               <% I18n.available_locales.each do |locale| %>
-                <li>
+                <li class="menu-lang">
                   <% if I18n.locale == locale %>
                     <%= tag.span t(locale), class: 'dropdown-item' %>
                   <% else %>
@@ -50,6 +50,7 @@
                           class: 'nav-link px-2 dropdown-toggle text-dark',
                           data: {"bs-toggle": 'dropdown'} do %>
                 <% if current_user.admin? %>
+
                 <%= image_tag("gear-fill.svg", size: '24') %>
                 <% else %>
                   <%= current_user.email %>

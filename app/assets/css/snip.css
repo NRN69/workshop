@@ -55,7 +55,7 @@ figure.snip p {
     transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
 }
 figure.snip h2 {
-    word-spacing: -0.15em;
+    word-spacing: 0;
     font-weight: 300;
     text-transform: uppercase;
     -webkit-transform: translate3d(30%, 0%, 0);
@@ -67,7 +67,7 @@ figure.snip h2 span {
     font-weight: 800;
 }
 figure.snip p {
-    font-weight: 200;
+    font-weight: 300;
     -webkit-transform: translate3d(0%, 30%, 0);
     transform: translate3d(0%, 30%, 0);
     -webkit-transition-delay: 0s;
@@ -85,6 +85,7 @@ figure.snip:hover img {
     opacity: 0.3;
 }
 figure.snip:hover figcaption h2 {
+    word-spacing: 0;
     opacity: 1;
     -webkit-transform: translate3d(0%, 0%, 0);
     transform: translate3d(0%, 0%, 0);
