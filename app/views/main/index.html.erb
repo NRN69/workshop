@@ -77,7 +77,7 @@
                   <%= sanitize post.title.capitalize %>
                     </span></h2>
                     <p>
-                      <%= sanitize post.body.truncate(115, separator: ' ') %>
+                      <%= sanitize post.body.truncate(90, separator: ' ') %>
                     </p><br>
 
                   <%= link_to '', post_path(post),

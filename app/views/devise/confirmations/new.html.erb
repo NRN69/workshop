@@ -18,7 +18,8 @@
               <%= f.label :email %><br />
               <%= f.email_field :email,
                                 autofocus: true,
-                                autocomplete: "email",
+                                autocomplete: 'off',
+                                placeholder: 'Email',
                                 value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
             </div>
 

@@ -18,7 +18,8 @@
             <div class="field">
               <%= f.email_field :email,
                                 autofocus: true,
-                                autocomplete: "email" %>
+                                autocomplete: 'off',
+                                placeholder: 'Email' %>
             </div>
 
             <div class="devise-label">
@@ -26,7 +27,8 @@
             </div>
             <div class="field">
               <%= f.password_field :password,
-                                   autocomplete: t('devise.autocomplete.password') %>
+                                   autocomplete: 'off',
+                                   placeholder: t('devise.autocomplete.password') %>
             </div>
 
             <% if devise_mapping.rememberable? %>

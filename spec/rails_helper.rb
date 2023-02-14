@@ -17,8 +17,8 @@ end
 
 RSpec.configure do |config|
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
-  config.iclude FactoryBot::Syntax::Methods
-  config.before(scope(:suite)) do
+  config.include FactoryBot::Syntax::Methods
+  config.before(:suite) do
     FactoryBot.find_definitions
   end
 

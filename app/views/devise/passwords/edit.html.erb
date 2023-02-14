@@ -25,13 +25,15 @@
               <% end %>
               <%= f.password_field :password,
                                    autofocus: true,
-                                   autocomplete: t('devise.autocomplete.new-password') %>
+                                   autocomplete: 'off',
+                                   placeholder: t('devise.autocomplete.password') %>
             </div>
 
             <div class="field">
               <%= f.label :password_confirmation, t('devise.passwords.edit.password_confirmation') %><br />
               <%= f.password_field :password_confirmation,
-                                   autocomplete: t('devise.autocomplete.new-password') %>
+                                   autocomplete: 'off',
+                                   placeholder: t('devise.autocomplete.password_confirm') %>
             </div>
 
             <div class="actions my-3">

@@ -20,14 +20,14 @@
                 <div class="form-group my-4">
                   <%= f.email_field :email,
                                     autofocus: true,
-                                    autocomplete: "email",
+                                    autocomplete: "off",
                                     class: "field",
                                     placeholder: 'Email' %>
                 </div>
 
                 <div class="form-group my-1">
                   <%= f.password_field :password,
-                                       autocomplete: t('devise.autocomplete.password'),
+                                       autocomplete: "off",
                                        class: "field",
                                        placeholder: t('devise.autocomplete.password') %>
                 </div>
