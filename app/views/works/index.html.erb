@@ -1,23 +1,27 @@
 <% provide :page_title, t('works.index.title') %>
 <% currently_at t('menu.works') %>
+
 <main class="my-5">
   <div class="container">
     <div class="text-center">
       <h1 class="mb-5">
+
         <strong><%= t('works.index.title') %></strong>
+
         <% if current_user.try(:admin) %>
-          <%= link_to '+', new_work_path,
-                                     class: 'text-decoration-none text-reset',
-                                      data: { turbo_frame: dom_id(Work.new) } %>
-          <% end %>
+
+          <%= link_to '+',  new_work_path,
+                            class: 'text-decoration-none text-reset' %>
+        <% end %>
+
       </h1>
-        <div class="my-3"
-          <%= turbo_frame_tag Work.new %>
-        </div>
       <div class="row">
+
         <%= render 'work' %>
+
       </div>
     </div>
+  </div>
 </main>
 
 

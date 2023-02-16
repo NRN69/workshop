@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-class Post < ApplicationRecord
-  validates :title, presence: true
-  validates :body, presence: true
+class Blog < ApplicationRecord
+  validates :title, presence: true, length: { minimum: 2 }
+  validates :body, presence: true, length: { minimum: 2 }
   # validates :img, present: true
   mount_uploader :img, ImgUploader
   belongs_to :user

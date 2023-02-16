@@ -1,7 +1,7 @@
 ru:
   activerecord:
     attributes:
-      post:
+      blog:
         title: "Название"
         body: "Текст"
       work:
@@ -23,7 +23,7 @@ ru:
       you_sure: "Вы уверены?"
   main:
     index:
-      posts:
+      blogs:
         title: "Статьи"
 
   works:
@@ -40,7 +40,7 @@ ru:
     destroy:
       success: "Услуга удалена!"
 
-  posts:
+  blogs:
     index:
       title: "Статьи"
     show:
@@ -61,7 +61,7 @@ ru:
   menu:
     home: "Главная"
     works: "Услуги"
-    posts: "Статьи"
+    blogs: "Статьи"
     contacts: "Контакты"
     auth:
       sign_in:

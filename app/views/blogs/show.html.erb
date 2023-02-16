@@ -1,15 +1,22 @@
-<% provide :page_title, @post.title %>
+<% provide :page_title, @blog.title %>
 <% currently_at %>
+
 <main class="my-5">
   <div class="container">
     <div class="text-center">
-      <h1 class="mb-5"><strong><%= @post.title.gsub('&nbsp;','') %></strong></h1>
+      <h1 class="mb-5">
+
+        <strong><%= @blog.title %></strong>
+
+      </h1>
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
               <div class="img-fluid">
-                <%= image_tag(@post.img.url, size: '600x450', class: 'image-post-show') %>
+
+                <%= image_tag(@blog.img.url, size: '600x450', class: 'image-post-show') %>
+
               </div>
             </div>
           </div>
@@ -20,11 +27,13 @@
             </div>
             <div class="card-body text-start">
               <h4 class="card-title">
-                <%= sanitize @post.body %>
+
+                <%= sanitize @blog.body %>
+
               </h4>
               <p class="card-text">
 
-                <%= render 'form', post: @post %>
+                <%= render 'form', blog: @blog %>
 
               </p>
             </div>

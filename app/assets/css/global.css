@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 .container .btn {
     border-radius: 20px;
     padding: 8px;
@@ -5,15 +6,17 @@
 }
 
 .li {
-    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;;
 }
 
 .container {
-    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;;
 }
 
 .container strong {
     font-size: 50px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
 }
 .card {
     --bs-card-border-width: 0px !important;

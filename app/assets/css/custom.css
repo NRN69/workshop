@@ -4,6 +4,7 @@
 @import url('dropdown.css');
 @import url('menu.css');
 @import url('global.css');
+@import url('pagination.css');
 
 .img_tag-style {
     border-radius: 50px;
@@ -16,4 +17,10 @@
 .img-fluid .image-work-show {
     margin-left: -270px;
     margin-top: 0;
+}
+.modal .image {
+    color: white;
+    width: 250px;
+    height: 250px;
+    margin-left: -20px;
 }

@@ -1,0 +1,3 @@
+<%= turbo_stream.update Blog.new, '' %>
+<%= turbo_stream.after Blog.new, render(@blog) %>
+<%= prepend_flash %>

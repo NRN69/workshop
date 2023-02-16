@@ -2,7 +2,8 @@
 
 FactoryBot.define do
   factory :work do
-    title { FFaker::Lorem.sentence }
-    body  { FFaker::Lorem.sentence }
+    title { FFaker::Lorem.word }
+    body  { FFaker::Lorem.sentence(10) }
+    association :user, factory: :user
   end
 end

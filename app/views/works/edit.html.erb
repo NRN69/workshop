@@ -1,15 +1,22 @@
 <% provide :page_title, t('works.edit.title') %>
 <% currently_at %>
+
 <main class="my-5">
   <div class="container">
     <div class="text-center">
-      <h1 class="mb-5"><strong><%= @work.title %></strong></h1>
+      <h1 class="mb-5">
+
+        <strong><%= @work.title %></strong>
+
+      </h1>
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
               <div class="img-fluid">
+
                 <%= image_tag(@work.img.url, size: '600x450', class: 'image-work-show') %>
+
               </div>
             </div>
           </div>
@@ -20,10 +27,15 @@
             </div>
             <div class="card-body">
               <h1 class="card-title text-start mx-5 mt-5 mb-5">
+
                 <% @work.body.split(',').each do |line| %>
+
                   <ul class="list-unstyled">
-                    <li><%= image_tag "check-lg.svg", size: '60', class: 'mx-4' %>
+                    <li>
+
+                      <%= image_tag "check-lg.svg", size: '60', class: 'mx-4' %>
                       <%= line.upcase %>
+
                     </li>
                   </ul>
                 <% end %>

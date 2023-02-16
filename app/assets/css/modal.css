@@ -1,10 +1,10 @@
-.modal-img {
+.modal .image {
     color: white;
-    width: 120px;
-    height: 120px;
-    margin-bottom: 30px;
-    margin-left: 50px;
+    width: 250px;
+    height: 250px;
+    margin-left: -20px;
 }
+
 .modal .field {
     text-align: center;
     font-size: 18px;
@@ -16,9 +16,11 @@
     background-color: white;
     border-bottom: 2px solid #d9d9d9 !important;
 }
+
 .modal .modal-title {
     text-align: left;
 }
+
 .modal .btn {
     border-radius: 20px;
     width: 400px;
@@ -26,6 +28,7 @@
     margin-top: 20px;
     padding: 10px;
 }
+
 .modal .forgot {
     font-size: 14px;
     color: #666666;
@@ -33,6 +36,7 @@
     text-align: right;
     font-weight: 300;
 }
+
 .modal .sign_up {
     font-size: 16px;
     line-height: 1.5;
@@ -42,12 +46,14 @@
     margin-bottom: 30px;
     font-weight: 300;
 }
+
 .modal .title {
     font-size: 40px;
     text-align: center;
     margin-bottom: 50px;
     margin-top: 50px;
 }
+
 .modal input {
     outline: none;
     border: none;
@@ -58,35 +64,42 @@
     border: none;
 }
 
-.modal textarea:focus, input:focus {
-    border-color: transparent !important;
-}
-.modal input:focus::-webkit-input-placeholder {
-    color: transparent;
+.modal input:focus,
+.modal textarea:focus {
+    border-bottom: 2px solid #d9d9d9 !important;
 }
 
-.modal input:focus:-moz-placeholder {
-    color: transparent;
+.modal input::-webkit-input-placeholder,
+.modal input:-moz-placeholder,
+.modal input::-moz-placeholder,
+.modal input:-ms-input-placeholder {
+    color: #adadad;
 }
 
-.modal input:focus::-moz-placeholder {
-    color: transparent;
-}
+.modal input:focus::-webkit-input-placeholder,
+.modal input:focus:-moz-placeholder,
+.modal input:focus::-moz-placeholder,
 .modal input:focus:-ms-input-placeholder {
     color: transparent;
 }
 
-.modal textarea:focus::-webkit-input-placeholder { color:transparent; }
-.modal textarea:focus:-moz-placeholder { color:transparent; }
-.modal textarea:focus::-moz-placeholder { color:transparent; }
-.modal textarea:focus:-ms-input-placeholder { color:transparent; }
+.modal input:-webkit-autofill,
+.modal input:-webkit-autofill:hover,
+.modal input:-webkit-autofill:focus,
+.modal input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
 
-.modal input::-webkit-input-placeholder { color: #adadad;}
-.modal input:-moz-placeholder { color: #adadad;}
-.modal input::-moz-placeholder { color: #adadad;}
-.modal input:-ms-input-placeholder { color: #adadad;}
+.modal textarea::-webkit-input-placeholder,
+.modal textarea:-moz-placeholder,
+.modal textarea::-moz-placeholder,
+.modal textarea:-ms-input-placeholder {
+    color: #adadad;
+}
 
-.modal textarea::-webkit-input-placeholder { color: #adadad;}
-.modal textarea:-moz-placeholder { color: #adadad;}
-.modal textarea::-moz-placeholder { color: #adadad;}
-.modal textarea:-ms-input-placeholder { color: #adadad;}
+.modal textarea:focus::-webkit-input-placeholder,
+.modal textarea:focus:-moz-placeholder,
+.modal textarea:focus::-moz-placeholder,
+.modal textarea:focus:-ms-input-placeholder {
+    color:transparent;
+}

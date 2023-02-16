@@ -1,0 +1,17 @@
+.pagination {
+    list-style: none;
+    --bs-pagination-color: #ffffff !important;
+    --bs-pagination-bg: var(--bs-gray-dark) !important;
+}
+
+.pagination .page-link:focus {
+    box-shadow: none !important;
+    border-color: transparent !important;
+}
+
+.pagination > li > span:hover
+{
+    background-color: var(--bs-gray-dark) !important;
+    border-color: var(--bs-gray-dark) !important;
+    color: #ffffff !important;
+}

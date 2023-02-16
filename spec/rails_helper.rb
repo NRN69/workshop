@@ -7,6 +7,9 @@ abort('The Rails environment is running in production mode!') if Rails.env.produ
 require 'rspec/rails'
 require 'shoulda-matchers'
 require 'rspec/json_expectations'
+require 'devise'
+require_relative 'support/controller_macros'
+require_relative 'support/chrome'
 
 begin
   ActiveRecord::Migration.maintain_test_schema!
@@ -16,6 +19,10 @@ rescue ActiveRecord::PendingMigrationError => e
 end
 
 RSpec.configure do |config|
+  config.include Devise::Test::ControllerHelpers, type: :controller
+  config.include Devise::Test::IntegrationHelpers, type: :request
+  config.include Warden::Test::Helpers
+  config.extend ControllerMacros, type: :controller
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
   config.include FactoryBot::Syntax::Methods
   config.before(:suite) do

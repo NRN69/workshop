@@ -1,8 +1,19 @@
 <component name="ProjectDictionaryState">
   <dictionary name="nrn">
     <words>
+      <w>blogs</w>
+      <w>bootsnap</w>
+      <w>capybara</w>
+      <w>carrierwave</w>
+      <w>cssbundling</w>
       <w>ffaker</w>
+      <w>jbuilder</w>
+      <w>jsbundling</w>
+      <w>kaminari</w>
+      <w>propshaft</w>
       <w>shoulda</w>
+      <w>sidekiq</w>
+      <w>webdrivers</w>
     </words>
   </dictionary>
 </component>

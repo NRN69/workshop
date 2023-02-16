@@ -1,28 +1,31 @@
-<% @posts.each do |post|  %>
+<% @blogs.each do |blog|  %>
+
   <div class="col-lg-4 col-md-6 mb-4">
     <div class="card">
       <figure class="snip">
 
-        <%= image_tag(post.img.url,
-                              size: '400x300', alt: 'no_image') %>
+        <%= image_tag(blog.img.url,
+                              size: '400x300',
+                               alt: 'no_image') %>
         <figcaption>
           <h2><span>
 
-            <%= sanitize post.title.capitalize%>
+            <%= sanitize blog.title.capitalize%>
+
           </span></h2>
           <p>
-            <%= sanitize post.body.truncate(90, separator: ' ') %>
+            <%= sanitize blog.body.truncate(90, separator: ' ') %>
           </p><br>
 
-            <%= link_to '', post_path(post),
+            <%= link_to '', blog_path(blog),
                               class: 'text-decoration-none text-reset' %>
           <p><b>
 
             <% if current_user.try(:admin) %>
-              <%= link_to t('global.button.edit').upcase, edit_post_path(post),
+              <%= link_to t('global.button.edit').upcase, edit_blog_path(blog),
                               class: 'text-start my-2' %>
-              <%= link_to t('global.button.delete').upcase, post_path(post),
-                              data: {turbo_method: :delete,
+              <%= link_to t('global.button.delete').upcase, blog_path(blog),
+                              data: {  turbo_method: :delete,
                                       turbo_confirm: t('global.dialog.you_sure')},
                               class: 'text-center my-2' %>
             <% end %>
@@ -30,7 +33,7 @@
             </b>
           <h2 class="text-end">
 
-            <%= link_to "🡪", post_path(post),
+            <%= link_to "🡪", blog_path(blog),
                               class: 'text-decoration-none text-reset' %>
 
           </h2>
