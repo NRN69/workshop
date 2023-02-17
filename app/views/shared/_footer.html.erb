@@ -1,0 +1,29 @@
+<footer>
+  <div class="footer-top">
+    <div class="footer-top-info">
+      <b>Адрес: </b>
+        <%= link_to '216км трассы М10, д. Миронежье, стоянка «Дубрава»','https://yandex.ru/maps/-/CCUC7OxGkA',
+                                                        target: '_blank',
+                                                        class: 'text-decoration-none text-reset' %>
+      <br>
+      <b>Часы работы: </b>9:00 - 20:00 ПН-СБ
+      <br>
+      <b>Телефон: </b>
+        <%= phone_to '9201531212', '+7 (920) 153-12-12',
+                                                        country_code: "7",
+                                                        class: 'text-decoration-none text-reset' %>
+      <br>
+      <b>Email: </b><%= mail_to 'kbsv69@mail.ru', 'kbsv69@mail.ru',
+                                                        class: 'text-decoration-none text-reset' %>
+    </div>
+
+    <div class="arrow-up"
+       <%= link_to image_tag("arrow-up-circle-fill.svg", size: '30'),'#', id: "scrollToTopBtn" %>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-info">
+    Copyright @2023 All rights reserved | This website made by NRN
+  </div>
+</footer>

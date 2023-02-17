@@ -30,7 +30,7 @@
             <div class="card-body text-start">
               <h4 class="card-title">
 
-                <%= sanitize @blog.body %>
+                <%= simple_format @blog.body  %>
 
               </h4>
               <p class="card-text">

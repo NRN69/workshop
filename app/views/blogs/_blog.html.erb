@@ -14,7 +14,7 @@
 
           </span></h2>
           <p>
-            <%= sanitize blog.body.truncate(90, separator: ' ') %>
+            <%= simple_format blog.body.truncate(90, separator: ' ') %>
           </p><br>
 
             <%= link_to '', blog_path(blog),
