@@ -4,9 +4,13 @@ ru:
       blog:
         title: "Название"
         body: "Текст"
+        image: "Изображение"
+        documents: "Документы"
       work:
         title: "Название"
         body: "Текст"
+        image: "Изображение"
+        documents: "Документы"
 
   set_page_options:
     page_title: 'Мастерская Миронежье'

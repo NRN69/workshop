@@ -6,6 +6,7 @@
       <w>capybara</w>
       <w>carrierwave</w>
       <w>cssbundling</w>
+      <w>docx</w>
       <w>ffaker</w>
       <w>jbuilder</w>
       <w>jsbundling</w>
@@ -14,6 +15,7 @@
       <w>shoulda</w>
       <w>sidekiq</w>
       <w>webdrivers</w>
+      <w>xlsx</w>
     </words>
   </dictionary>
 </component>

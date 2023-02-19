@@ -1,33 +1,44 @@
 <% if current_user.try(:admin) %>
-  <%= turbo_frame_tag blog do %>
-    <%= form_with model: blog do |f| %>
-      <%= render 'shared/errors', object: blog %>
+  <hr>
+  <div class="form-main">
 
-      <div class="mb-3 row">
-        <div class="col-sm-2 col-form-label">
-          <%= f.label :title %>
+    <%= turbo_frame_tag blog do %>
+      <%= form_with model: blog do |f| %>
+        <%= render 'shared/errors', object: blog %>
+
+        <div class="mb-3 row">
+          <div class="col-sm-2 col-form-label">
+            <%= f.label :title %>
+          </div>
+
+          <div class="col-sm-10">
+            <%= f.text_field :title, class: 'form-control' %>
+          </div>
         </div>
 
-        <div class="col-sm-10">
-          <%= f.text_field :title, class: 'form-control' %>
+        <div class="mb-3 row">
+          <div class="col-sm-2 col-form-label">
+            <%= f.label :body %>
+          </div>
+
+          <div class="col-sm-10">
+            <%= f.text_area   :body, size: '30x10', class: 'form-control' %>
+          </div>
         </div>
-      </div>
 
-      <div class="mb-3 row">
-        <div class="col-sm-2 col-form-label">
-          <%= f.label :body %>
+        <div class="custom-file-input">
+          <div class="col-sm-10">
+            <%= f.label :image %><br>
+            <%= f.file_field :img %><br>
+            <%= f.label :documents %><br>
+            <%= f.file_field :documents, multiple:  true %>
+          </div>
         </div>
+       <div class="col-sm-10">
+            <%= f.submit t('global.button.submit'), class: 'btn btn-dark' %>
+       </div>
 
-        <div class="col-sm-10">
-          <%= f.text_area   :body, size: '30x10', class: 'form-control' %>
-        </div>
-      </div>
-
-      <div class="mb-4"><%= f.file_field :img %></div>
-
-      <p><%= f.submit t('global.button.submit'), class: 'btn btn-dark' %>
-      </p>
-
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
 <% end %>

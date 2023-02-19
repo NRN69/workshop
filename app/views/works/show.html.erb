@@ -39,11 +39,15 @@
                   </ul>
                 <% end %>
               </h1>
+
+                <%= render 'attachment', work: @work %>
+
               <p class="card-text">
 
                 <%= render 'form', work: @work %>
 
               </p>
+              <div class="p-4"></div>
             </div>
           </div>
         </div>

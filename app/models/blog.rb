@@ -3,8 +3,9 @@
 class Blog < ApplicationRecord
   validates :title, presence: true, length: { minimum: 2 }
   validates :body, presence: true, length: { minimum: 2 }
-  # validates :img, present: true
+
   mount_uploader :img, ImgUploader
+
+  has_many_attached :documents
   belongs_to :user
-  attr_accessor :user_id
 end

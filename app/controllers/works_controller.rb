@@ -62,6 +62,6 @@ class WorksController < ApplicationController
   end
 
   def work_params
-    params.require(:work).permit(:title, :body, :img, :user_id)
+    params.require(:work).permit(:title, :body, :img, :user_id, documents: [])
   end
 end

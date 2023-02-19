@@ -33,11 +33,14 @@
                 <%= simple_format @blog.body  %>
 
               </h4>
-              <p class="card-text">
 
-                <%= render 'form', blog: @blog %>
+              <%= render 'attachment', blog: @blog %>
 
-              </p>
+              <div class="card">
+
+               <%= render 'form', blog: @blog %>
+
+              </div>
             </div>
           </div>
         </div>
