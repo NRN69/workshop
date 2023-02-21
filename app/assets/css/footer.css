@@ -16,6 +16,9 @@
     font-size: 15px;
     position: absolute;
 }
+.footer-top-info .container {
+    width: 100%;
+}
 
 .footer-top .arrow-up {
     padding-left: 50%;
@@ -37,6 +40,13 @@
     font-weight: 400;
     color: #a7a8a8;
     font-size: 15px;
+
+}
+.col-right {
+    margin-left: 145%;
+    margin-top: -20%;
+    width: 100%;
+    text-align: end;
 
 }
 

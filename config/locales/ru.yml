@@ -5,12 +5,12 @@ ru:
         title: "Название"
         body: "Текст"
         image: "Изображение"
-        documents: "Документы"
+        files: "Файлы"
       work:
         title: "Название"
         body: "Текст"
         image: "Изображение"
-        documents: "Документы"
+        files: "Файлы"
 
   set_page_options:
     page_title: 'Мастерская Миронежье'
@@ -77,6 +77,9 @@ ru:
 
   errors:
     messages:
+      content_type_invalid: "должны иметь формат PDF, DOC, DOCX, XLS, XLSX, JPG"
+      file_size_out_of_range: "не должны превышать 100Mb"
+      limit_out_of_range: "не могу быть загружены в количестве больше шести"
       carrierwave_processing_error: "Не удается изменить размер изображения."
       carrierwave_integrity_error: "Не изображение."
       carrierwave_download_error: "Не удалось загрузить изображение."
