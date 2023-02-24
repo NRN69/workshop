@@ -1,12 +1,12 @@
 <% @blogs.each do |blog|  %>
 
-  <div class="col-lg-4 col-md-6 mb-4">
-    <div class="card">
+  <div class="col-xl-4 col-md-6 mb-4">
+    <div class="card card-blog">
       <figure class="snip">
 
         <%= image_tag(blog.img.url,
                               size: '400x300',
-                               alt: 'no_image') %>
+                               alt: 'no_image', class: 'blog-index-image') %>
         <figcaption>
           <h2><span>
 

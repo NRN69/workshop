@@ -15,3 +15,21 @@
     font-weight: 600;
     font-size: 14px;
 }
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+#dws-menu,
+header label {
+    display: none;
+}
+
+.menu-home {
+    display: none;
+}
+
+.user-menu {
+    display: none;
+}

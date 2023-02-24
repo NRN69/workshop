@@ -25,3 +25,17 @@
     margin-left: 70px;
     margin-top: 30px;
 }
+.card-contacts {
+    margin-left: 57%;
+    margin-top: -42%;
+    margin-bottom: 25%;
+}
+.contacts-575 {
+    display: none;
+}
+.contacts-main {
+    display: block;
+}
+.map-1199 {
+    display: none;
+}

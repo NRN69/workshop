@@ -1,12 +1,21 @@
 <%= provide :main_menu do %>
   <header class="p-1 bg-white text-dark">
-    <div class="container-fluid">
-      <nav class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-1 justify-content-center mb-md-0">
+    <nav class="container-fluid">
+      <input type="checkbox" id="dws-menu">
+      <div class="label-menu">
+        <label for="dws-menu"><%= image_tag 'list.svg', size: '30' %></label>
+      </div>
+      <nav class="d-flex nav-menu flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <ul class="nav nav-li col-12 col-lg-auto me-lg-auto mb-1 justify-content-center mb-md-0">
             <li class="image-menu">
               <%= nav_tab image_tag("house-fill.svg", size: '22', alt: t('menu.home')), root_path,
                           class: "nav-link", current_page: current_page %>
             </li>
+            <li class="menu-start menu-home">
+              <%= nav_tab t('menu.home'), root_path,
+                          class: "nav-link", current_page: current_page %>
+            </li>
+
             <li class="menu-start">
               <%= nav_tab t('menu.works'), works_path,
                           class: 'nav-link', current_page: current_page %>
@@ -21,7 +30,7 @@
             </li>
         </ul>
 
-        <ul class="nav col-12 col-lg-auto mb-2 mb-md-0">
+        <ul class="nav nav-language col-12 col-lg-auto mb-2 mb-md-0">
           <li class="dropdown">
             <%= link_to '#', class: 'nav-link px-2 dropdown-toggle text-dark',
                         data: {"bs-toggle": 'dropdown'} do %>
@@ -43,7 +52,7 @@
           </li>
         </ul>
 
-        <ul class="nav col-12 col-lg-auto mb-1 mb-md-0 mb-1">
+        <ul class="nav nav-user col-12 col-lg-auto mb-1 mb-md-0 mb-1">
           <% if user_signed_in? %>
             <li class="dropdown">
               <%= link_to '#',
@@ -81,6 +90,70 @@
           <% end %>
         </ul>
       </nav>
-    </div>
+
+      <div class="user-menu hidden">
+      <nav class="d-flex user-menu flex-wrap align-items-center justify-content-center justify-content-lg-end">
+        <ul class="nav user-language col-12 col-lg-auto mb-2 mb-md-0">
+          <li class="dropdown">
+            <%= link_to '#', class: 'nav-link px-2 dropdown-toggle text-dark',
+                        data: {"bs-toggle": 'dropdown'} do %>
+              <%= t I18n.locale %>
+            <% end %>
+
+            <ul class="dropdown-menu">
+              <% I18n.available_locales.each do |locale| %>
+                <li class="menu-lang">
+                  <% if I18n.locale == locale %>
+                    <%= tag.span t(locale), class: 'dropdown-item' %>
+                  <% else %>
+                    <%= link_to t(locale), url_for(locale: locale),
+                                class: 'dropdown-item' %>
+                  <% end %>
+                </li>
+              <% end %>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="nav user-user col-12 col-lg-auto mb-1 mb-md-0 mb-1">
+          <% if user_signed_in? %>
+            <li class="dropdown">
+              <%= link_to '#',
+                          class: 'nav-link px-2 dropdown-toggle text-dark',
+                          data: {"bs-toggle": 'dropdown'} do %>
+                <% if current_user.admin? %>
+
+                  <%= image_tag("gear-fill.svg", size: '24') %>
+                <% else %>
+                  <%= current_user.email %>
+                <% end %>
+              <% end %>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <%= link_to t('menu.auth.sign_in.edit'), edit_user_registration_path,
+                              class: 'dropdown-item' %>
+                </li>
+
+                <li><hr class="dropdown-divider"></li>
+
+                <li>
+                  <%= link_to t('menu.auth.sign_in.exit'), destroy_user_session_path,
+                              class: 'dropdown-item',
+                              data: {turbo_method: :delete} %>
+                </li>
+              </ul>
+            </li>
+          <% else %>
+
+            <li>
+              <%= link_to image_tag("person-circle.svg", size: '22'), new_user_session_path %>
+            </li>
+
+          <% end %>
+        </ul>
+        </nav>
+      </div>
+    </nav>
   </header>
 <% end %>

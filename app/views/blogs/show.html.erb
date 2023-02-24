@@ -5,8 +5,9 @@
   <div class="container">
     <div class="text-center">
       <h1 class="mb-5">
-
+        <div class="blog-title">
         <strong><%= @blog.title %></strong>
+        </div>
 
       </h1>
       <div class="row">
@@ -15,7 +16,9 @@
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
               <div class="img-fluid">
 
-                <%= image_tag(@blog.img.url, size: '600x450', class: 'image-post-show') %>
+
+                <%= image_tag(@blog.img.url, size: '600x450', class: 'image-blog-show') %>
+
 
               </div>
             </div>
@@ -27,9 +30,11 @@
             </div>
             <div class="card-body text-start">
               <h4 class="card-title">
+                <div class="blog-body-text">
 
                 <%= simple_format @blog.body  %>
 
+              </div>
               </h4>
               <%= render 'attachment', blog: @blog %>
 

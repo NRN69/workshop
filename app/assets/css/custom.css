@@ -14,7 +14,7 @@
     border-radius: 50px;
 }
 
-.img-fluid .image-post-show {
+.img-fluid .image-blog-show {
     margin-left: -270px;
     margin-top: 40px;
 }
@@ -22,4 +22,10 @@
 .img-fluid .image-work-show {
     margin-left: -270px;
     margin-top: 0;
+}
+.work-body-text{
+
+    margin-top: -7%;
+    margin-left: 18%;
+
 }

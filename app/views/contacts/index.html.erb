@@ -5,17 +5,37 @@
   <div class="container-fluid align-content-center">
     <div class="text-center">
       <h1 class="mb-5 p-3" ></h1>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-              <div class="img-map">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0b68dd6f01a0e174bd8e06a5f3baee5584095b7ab084d6c9316e77d9b97ccd4e&amp;width=550&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+      <div class="contacts-main">
+        <div class="row-contacts contacts-main">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card contacts-map">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <div class="img-map">
+                  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0b68dd6f01a0e174bd8e06a5f3baee5584095b7ab084d6c9316e77d9b97ccd4e&amp;width=550&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class="img-map map-1199">
+                  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0b68dd6f01a0e174bd8e06a5f3baee5584095b7ab084d6c9316e77d9b97ccd4e&amp;width=450&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
               </div>
             </div>
           </div>
+          <div class="col-lg-8 col-md-6 mb-4">
+              <div class="card-contacts">
+                <h1><%= t('contacts.index.title') %></h1><br>
+                <h4><b>Адрес: </b>216км трассы М10, д. Миронежье, стоянка «Дубрава»</h4><br>
+                <h4><b>Часы работы: </b>9:00 - 20:00 ПН-СБ</h4><br>
+                <h4><b>Телефон: </b>
+                  <%= phone_to '9201531212', '+7 (920) 153-12-12', country_code: "7", class: 'text-decoration-none text-reset' %>
+                  <%= phone_to '9201531212', image_tag("mobile-call.svg", size: '34'), country_code: "7", class: 'mobile-image'  %>
+                </h4><br>
+                <h4><b>Email: </b><%= mail_to 'kbsv69@mail.ru', 'kbsv69@mail.ru', class: 'text-decoration-none text-reset' %></h4>
+              </div>
+          </div>
         </div>
-        <div class="col-lg-8 col-md-6 mb-4">
+    </div>
+      <div class="contacts-575 767 991">
+        <div class="row-contacts">
+          <div class="col-lg-8 col-md-6 mb-4">
             <div class="card-contacts">
               <h1><%= t('contacts.index.title') %></h1><br>
               <h4><b>Адрес: </b>216км трассы М10, д. Миронежье, стоянка «Дубрава»</h4><br>
@@ -26,6 +46,22 @@
               </h4><br>
               <h4><b>Email: </b><%= mail_to 'kbsv69@mail.ru', 'kbsv69@mail.ru', class: 'text-decoration-none text-reset' %></h4>
             </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card contacts-map">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <div class="img-map map-575">
+                  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0b68dd6f01a0e174bd8e06a5f3baee5584095b7ab084d6c9316e77d9b97ccd4e&amp;width=480&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class="img-map map-767">
+                  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0b68dd6f01a0e174bd8e06a5f3baee5584095b7ab084d6c9316e77d9b97ccd4e&amp;width=550&amp;height=480&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class="img-map map-991">
+                  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0b68dd6f01a0e174bd8e06a5f3baee5584095b7ab084d6c9316e77d9b97ccd4e&amp;width=550&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

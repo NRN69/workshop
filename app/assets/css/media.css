@@ -1,0 +1,655 @@
+@media only screen and (max-width: 1399px) {
+
+    .carousel-item h1 {
+        font-size: 560%;
+    }
+
+    .carousel-item h4 {
+        font-size: 560%;
+    }
+    .card {
+        height:  90%;
+    }
+    .blog-index-image {
+        width: 100%;
+        height: 100%;
+    }
+    .work-index-image {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+    .card-contacts h4 {
+        font-size: 120%;
+        margin-left: 5%;
+    }
+
+    .card-contacts h1 {
+        font-size: 200%;
+        margin-left: 5%;
+    }
+    .card-contacts {
+        margin-left: 67%;
+        margin-top: -58%;
+        margin-bottom: 40%;
+    }
+
+    .img-fluid .image-work-show {
+        margin-left: -20%;
+        margin-top: 0;
+        width: 450px;
+        height: 338px;
+    }
+
+    .work-image-body {
+        width: 40px;
+        height: 40px;
+        margin-left: 8%;
+    }
+
+    .work-body-text {
+        font-size: 80%;
+        margin-top: -5%;
+        margin-left: 18%;
+
+    }
+
+    .img-fluid .image-blog-show {
+        margin-left: -30%;
+        margin-top: 40px;
+        width: 450px;
+        height: 338px;
+    }
+
+    .col-right {
+        margin-left: 90%;
+
+    }
+
+    .footer-top-info {
+        font-size: 85%;
+
+    }
+
+    .footer-bottom-info {
+        font-size: 85%;
+        margin-left: 28%;
+    }
+
+
+@media only screen and (max-width: 1199px) {
+
+    .snip p {
+        font-size: 90%;
+    }
+
+    .snip h2 {
+        font-size: 150%;
+    }
+
+    .main-title strong {
+        font-size:100%;
+         margin-left: -8%;
+    }
+
+    .card {
+        width: 80%;
+        height: 100%;
+    }
+    .blog-index-image {
+        width: 380px;
+        height: 250px;
+    }
+    .work-index-image {
+        width: 380px;
+        height: 250px;
+    }
+    .row-work {
+
+        justify-content: center;
+    }
+
+    .carousel-item h1 {
+        font-size: 460%;
+    }
+
+    .carousel-item h4 {
+        font-size: 460%;
+    }
+
+    .carousel-item {
+        height: 300px;
+    }
+    .carousel-blur {
+        width: 1199px;
+        height: 300px;
+    }
+
+    .card-contacts h4 {
+        font-size: 90%;
+        margin-left: 10% ;
+        line-height: 10px;
+    }
+    .contacts-main .col-lg-4 {
+        width: 40%;
+        margin-bottom: 5%;
+
+    }
+    .contacts-main .col-lg-8 {
+        width: 40%;
+
+    }
+    .card-contacts {
+        margin-left: 110%;
+        margin-top: -90%;
+        margin-bottom: 60%;
+    }
+    .card-contacts h1 {
+        font-size: 190%;
+        margin-left: 10%;
+    }
+    .card-contacts .mobile-image {
+        margin-left: 10px;
+        margin-top: -13px;
+        position: absolute;
+    }
+
+    .img-fluid .image-work-show {
+        margin-left: -20%;
+        margin-top: 0;
+        width: 350px;
+        height: 270px;
+    }
+
+    .work-image-body {
+        width: 30px;
+        height:30px;
+        margin-left: 8%;
+        margin-top: -4%;
+    }
+
+    .work-body-text{
+        font-size: 60%;
+        margin-top: -5%;
+        margin-left: 20%;
+        line-height: 28px;
+    }
+
+    .post-title strong{
+        font-size: 90%;
+    }
+
+    .work-title strong{
+        font-size: 90%;
+    }
+
+    .blog-body-text{
+        font-size: 70%;
+        margin-top: -5%;
+        margin-left: 18%;
+        line-height: 18px;
+    }
+
+    .img-fluid .image-blog-show {
+        width: 400px;
+        height: 300px;
+    }
+
+    .col-right {
+        margin-left: 98%;
+
+    }
+
+    .footer-top-info {
+        font-size: 70%;
+
+    }
+
+    .footer-bottom-info {
+        font-size: 85%;
+        margin-left: 28%;
+    }
+
+    .footer-top {
+        height: 120px;
+    }
+
+    .footer-top .arrow-up {
+        padding-top: 5.70rem;
+    }
+    .map-1199 {
+        display: block;
+    }
+    .img-map {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    .carousel-item {
+        height: 250px;
+    }
+
+    .carousel-blur {
+        width: 991px;
+        height: 250px;
+    }
+
+    .carousel-caption .title {
+        font-size: 400%;
+    }
+
+    .carousel-caption .body {
+        font-size: 200%;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+    }
+
+    .row-work {
+
+        justify-content: center;
+    }
+
+    .main-title strong {
+        font-size:100%;
+        margin-left: 2%;
+    }
+
+    .blog-index-image {
+        width: 380px;
+        height: 250px;
+    }
+
+    .work-index-image {
+        width: 380px;
+        height: 250px;
+    }
+
+    .work-image-body {
+        width: 30px;
+        height:30px;
+        margin-left: 8%;
+        margin-top: -4%;
+    }
+
+    .work-body-text{
+        font-size: 40%;
+        margin-top: -5%;
+        margin-left: 20%;
+        line-height: 28px;
+    }
+
+    .col-right {
+        margin-top: -20.5%;
+
+    }
+
+    .footer-top-info {
+        font-size: 60%;
+        margin-top: 1.7%;
+        margin-left: 2.5%;
+    }
+
+    .footer-bottom-info {
+        font-size: 65%;
+        margin-left: 20%;
+    }
+
+    .footer-top {
+        height: 90px;
+    }
+
+    .footer-top .arrow-up {
+        padding-top: 4.10rem;
+    }
+
+    ul.nav {
+        width: 8%;
+    }
+
+    li.image-menu {
+        margin-left: -955%;
+
+    }
+
+    .nav-language {
+        margin-left: 850px;
+        position: absolute;
+        width: -10%;
+    }
+
+    .nav-user {
+        margin-left: 950px;
+        position: absolute;
+        width: 1%;
+    }
+    .map-767 {
+        display: none;
+    }
+    .map-575 {
+        display: none;
+    }
+    .map-991 {
+        display: block;
+    }
+    .contacts-main {
+        display: none;
+    }
+    .contacts-575 {
+        display: block;
+    }
+    .contacts-map {
+        margin-left: 28%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    ul.nav {
+        width: 7%;
+    }
+
+    li.image-menu {
+        margin-left: -980%;
+
+    }
+
+    .nav-language {
+        margin-left: 580px;
+        position: absolute;
+        width: 1%;
+        margin-top: 1%;
+    }
+
+    .nav-user {
+        margin-left: 680px;
+        position: absolute;
+        width: 10px;
+        margin-top: 0.5%;
+    }
+    .carousel-item {
+        height: 230px;
+    }
+
+    .carousel-caption {
+        display: block !important;
+    }
+
+    .carousel-caption .title {
+        display: block;
+        font-size: 300%;
+    }
+
+    .carousel-caption .body {
+        font-size: 140%;
+    }
+
+    .carousel-blur {
+        width: 100%;
+        height: 230px;
+    }
+
+
+    .card {
+        width: 70%;
+        height: 100%;
+        margin-left: 14.5%;
+    }
+
+    .main-title strong {
+        font-size: 100%;
+        margin-left: 2%;
+    }
+
+    .blog-index-image {
+        width: 350px;
+        height: 260px;
+    }
+
+    .work-index-image {
+        width: 350px;
+        height: 260px;
+    }
+
+    .img-fluid .image-work-show {
+        margin-left: 10%;
+        margin-top: 0;
+        width: 350px;
+        height: 270px;
+    }
+
+    .work-image-body {
+        width: 30px;
+        height:30px;
+        margin-left: 4%;
+        margin-top: -10%;
+    }
+
+    .work-body-text{
+        font-size: 60%;
+        margin-top: -10%;
+        margin-left: 26%;
+        line-height: 33px;
+        width: 120%;
+    }
+
+    .img-fluid .image-blog-show {
+        width: 400px;
+        height: 300px;
+        margin-left: -1%;
+    }
+
+    .blog-body-text{
+        font-size: 70%;
+        margin-top: -8%;
+        margin-left: -9%;
+        line-height: 18px;
+        width: 140%;
+    }
+
+    .col-right {
+        margin-top: -20.5%;
+
+    }
+
+    .footer-top-info {
+        font-size: 46%;
+        margin-top: 2%;
+        margin-left: 2.5%;
+    }
+
+    .footer-bottom-info {
+        font-size: 65%;
+        margin-left: 20%;
+    }
+
+    .footer-top {
+        height: 80px;
+    }
+
+    .footer-top .arrow-up {
+        padding-top: 3.45rem;
+        margin-left: -1.2%;
+    }
+
+    .modal .image {
+        margin-left: 2px;
+    }
+
+    .modal .field {
+        margin-left: 20px;
+    }
+
+    .modal .btn {
+        margin-left: 20px;
+    }
+
+    .modal .forgot {
+        text-align: center;
+        margin-left: 110px;
+    }
+
+    .modal .sign_up {
+        margin-left: 87px;
+    }
+    .contacts-575 {
+        display: block;
+    }
+    .contacts-main {
+        display: none;
+    }
+    .card-contacts {
+        font-size: 100%;
+        margin-left: 5%;
+    }
+    .contacts-map {
+        margin-left: 3%;
+    }
+    .map-575 {
+        display: none;
+    }
+    .map-767 {
+        display: block;
+    }
+    .map-991 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+
+    .carousel {
+        display: none;
+    }
+
+    header .container-fluid {
+        padding: 10px 10px;
+    }
+
+    header label {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-right: 1px solid #fff;
+    }
+
+    .nav-menu {
+        position: absolute;
+        margin-left: -200px;
+        text-align: start;
+        transition: all 0.5s;
+    }
+
+    #dws-menu:checked ~ .nav-menu {
+        margin: 0;
+    }
+
+    .nav-menu .nav-li {
+        flex-direction: column;
+        line-height: 10px;
+    }
+
+    .menu-right {
+        display: block;
+    }
+    .nav-language {
+        display: none;
+    }
+
+    .nav-user {
+        display: none;
+    }
+    .image-menu {
+        display: none;
+    }
+    .menu-home {
+        display: block;
+    }
+    .work-title {
+        margin-top: 20%;
+    }
+    .blog-title {
+        margin-top: 20%;
+    }
+
+   ul .nav-language {
+        display: none;
+    }
+
+    ul .nav-user {
+        display: none;
+    }
+   .user-menu {
+       display: block;
+       margin-top: -6%;
+       margin-left: 195px;
+
+   }
+    .user-menu .user-user {
+        margin-left: 45px;
+        margin-top: -4%;
+
+    }
+    .col-right {
+        margin-top: -20.5%;
+
+    }
+
+    .footer-top-info {
+        font-size: 34%;
+        margin-top: 2.5%;
+        margin-left: 2.5%;
+    }
+
+    .footer-bottom-info {
+        font-size: 55%;
+        margin-left: 12%;
+        margin-top: 2%;
+    }
+
+    .footer-top {
+        height: 60px;
+    }
+
+    .footer-top .arrow-up {
+        display: none;
+    }
+
+    .row-contacts {
+        justify-content: center;
+    }
+
+    .img-map {
+        display: none;
+    }
+    .map-575 {
+        display: block;
+    }
+    .contacts-map {
+        margin-left: -5%;
+    }
+    .contacts-main {
+        display: none;
+    }
+    .contacts-575 {
+        display: block;
+    }
+    .card-contacts {
+        font-size: 80%;
+        margin-left: 5%;
+    }
+    .map-767 {
+        display: none;
+    }
+    .map-991 {
+        display: none;
+    }
+}
+
+
+
