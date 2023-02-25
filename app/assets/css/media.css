@@ -1,3 +1,4 @@
+
 @media only screen and (max-width: 1399px) {
 
     .carousel-item h1 {
@@ -31,7 +32,7 @@
     }
     .card-contacts {
         margin-left: 67%;
-        margin-top: -58%;
+        margin-top: -80%;
         margin-bottom: 40%;
     }
 
@@ -61,21 +62,17 @@
         width: 450px;
         height: 338px;
     }
+.footer-top {
+    font-size: 16px;
+}
 
-    .col-right {
-        margin-left: 90%;
+.footer-top .container {
+    padding: 40px 40px;
+}
 
-    }
-
-    .footer-top-info {
-        font-size: 85%;
-
-    }
-
-    .footer-bottom-info {
-        font-size: 85%;
-        margin-left: 28%;
-    }
+.footer-top .arrow-up {
+    margin-top: -2%;
+}
 
 
 @media only screen and (max-width: 1199px) {
@@ -126,33 +123,13 @@
         height: 300px;
     }
 
-    .card-contacts h4 {
-        font-size: 90%;
-        margin-left: 10% ;
-        line-height: 10px;
+    .contacts h4 {
+        font-size: 120%;
+        line-height: 12px;
     }
-    .contacts-main .col-lg-4 {
-        width: 40%;
-        margin-bottom: 5%;
 
-    }
-    .contacts-main .col-lg-8 {
-        width: 40%;
-
-    }
-    .card-contacts {
-        margin-left: 110%;
-        margin-top: -90%;
-        margin-bottom: 60%;
-    }
-    .card-contacts h1 {
-        font-size: 190%;
-        margin-left: 10%;
-    }
-    .card-contacts .mobile-image {
-        margin-left: 10px;
-        margin-top: -13px;
-        position: absolute;
+    .contacts h1 {
+        font-size: 250%;
     }
 
     .img-fluid .image-work-show {
@@ -201,28 +178,26 @@
 
     }
 
-    .footer-top-info {
-        font-size: 70%;
-
-    }
-
-    .footer-bottom-info {
-        font-size: 85%;
-        margin-left: 28%;
+    footer .container { width: 120%;
     }
 
     .footer-top {
+        font-size: 12px;
         height: 120px;
     }
 
-    .footer-top .arrow-up {
-        padding-top: 5.70rem;
+    .footer-top .container {
+        padding: 20px;
     }
-    .map-1199 {
-        display: block;
+
+    .column-right {
+        padding: 0;
+        margin: 0;
+        width: 37%;
     }
-    .img-map {
-        display: none;
+
+    .column-left {
+        width: 45%;
     }
 }
 
@@ -248,6 +223,21 @@
     .card {
         width: 100%;
         height: 100%;
+    }
+
+    .contacts h4 {
+        font-size: 100%;
+        line-height: 12px;
+    }
+
+    .contacts h1 {
+        font-size: 180%;
+    }
+    .row-contacts {
+        width: 120%;
+    }
+    .contacts {
+        margin-left: 10%;
     }
 
     .row-work {
@@ -284,28 +274,17 @@
         line-height: 28px;
     }
 
-    .col-right {
-        margin-top: -20.5%;
-
-    }
-
-    .footer-top-info {
-        font-size: 60%;
-        margin-top: 1.7%;
-        margin-left: 2.5%;
-    }
-
-    .footer-bottom-info {
-        font-size: 65%;
-        margin-left: 20%;
-    }
-
     .footer-top {
-        height: 90px;
+        font-size: 10px;
+        height: 100px;
     }
 
     .footer-top .arrow-up {
-        padding-top: 4.10rem;
+        margin-top: -4%;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
     }
 
     ul.nav {
@@ -314,7 +293,6 @@
 
     li.image-menu {
         margin-left: -955%;
-
     }
 
     .nav-language {
@@ -336,15 +314,6 @@
     }
     .map-991 {
         display: block;
-    }
-    .contacts-main {
-        display: none;
-    }
-    .contacts-575 {
-        display: block;
-    }
-    .contacts-map {
-        margin-left: 28%;
     }
 }
 
@@ -452,31 +421,6 @@
         width: 140%;
     }
 
-    .col-right {
-        margin-top: -20.5%;
-
-    }
-
-    .footer-top-info {
-        font-size: 46%;
-        margin-top: 2%;
-        margin-left: 2.5%;
-    }
-
-    .footer-bottom-info {
-        font-size: 65%;
-        margin-left: 20%;
-    }
-
-    .footer-top {
-        height: 80px;
-    }
-
-    .footer-top .arrow-up {
-        padding-top: 3.45rem;
-        margin-left: -1.2%;
-    }
-
     .modal .image {
         margin-left: 2px;
     }
@@ -497,27 +441,32 @@
     .modal .sign_up {
         margin-left: 87px;
     }
-    .contacts-575 {
-        display: block;
+    .contacts h4 {
+        font-size: 90%;
+        line-height: 12px;
     }
-    .contacts-main {
-        display: none;
+
+    .contacts h1 {
+        font-size: 150%;
     }
-    .card-contacts {
-        font-size: 100%;
-        margin-left: 5%;
+    .contacts {
+        margin-left: 0;
     }
-    .contacts-map {
-        margin-left: 3%;
+    .footer-top {
+        font-size: 7px;
+        height: 80px;
     }
-    .map-575 {
-        display: none;
+
+    .footer-top .arrow-up {
+        margin-top: -5.7%;
     }
-    .map-767 {
-        display: block;
+    .footer-top .arrow-up img {
+        width: 25px;
+        height: 25px;
     }
-    .map-991 {
-        display: none;
+
+    .footer-bottom {
+        font-size: 12px;
     }
 }
 
@@ -557,6 +506,7 @@
     .menu-right {
         display: block;
     }
+
     .nav-language {
         display: none;
     }
@@ -564,20 +514,24 @@
     .nav-user {
         display: none;
     }
+
     .image-menu {
         display: none;
     }
+
     .menu-home {
         display: block;
     }
+
     .work-title {
         margin-top: 20%;
     }
+
     .blog-title {
         margin-top: 20%;
     }
 
-   ul .nav-language {
+    ul .nav-language {
         display: none;
     }
 
@@ -593,61 +547,40 @@
     .user-menu .user-user {
         margin-left: 45px;
         margin-top: -4%;
-
-    }
-    .col-right {
-        margin-top: -20.5%;
-
     }
 
-    .footer-top-info {
-        font-size: 34%;
-        margin-top: 2.5%;
-        margin-left: 2.5%;
+    .contacts h4 {
+        font-size: 80%;
     }
 
-    .footer-bottom-info {
-        font-size: 55%;
-        margin-left: 12%;
-        margin-top: 2%;
+    .contacts h1 {
+        font-size: 130%;
+    }
+
+    .card {
+        width: 65%;
     }
 
     .footer-top {
+        font-size: 6px;
         height: 60px;
     }
 
+    .footer-top .container {
+        padding: 10px 5px;
+    }
+
     .footer-top .arrow-up {
-        display: none;
+        margin-top: -8.7%;
     }
 
-    .row-contacts {
-        justify-content: center;
+    .footer-top .arrow-up img {
+        width: 20px;
+        height: 20px;
     }
 
-    .img-map {
-        display: none;
-    }
-    .map-575 {
-        display: block;
-    }
-    .contacts-map {
-        margin-left: -5%;
-    }
-    .contacts-main {
-        display: none;
-    }
-    .contacts-575 {
-        display: block;
-    }
-    .card-contacts {
-        font-size: 80%;
-        margin-left: 5%;
-    }
-    .map-767 {
-        display: none;
-    }
-    .map-991 {
-        display: none;
+    .footer-bottom {
+        font-size: 9px;
     }
 }
 

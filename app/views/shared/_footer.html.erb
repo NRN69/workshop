@@ -1,26 +1,28 @@
 <footer>
   <div class="footer-top">
-    <div class="footer-top-info">
-      <div class="container">
-        <div class="col-left">
-        <b>Адрес: </b>
-          <%= link_to '216км трассы М10, д. Миронежье, стоянка «Дубрава»','https://yandex.ru/maps/-/CCUC7OxGkA',
-                                                         target: '_blank',
-                                                          class: 'text-decoration-none text-reset' %>
-        <br>
-        <b>Часы работы: </b>9:00 - 20:00 ПН-СБ
-        <br>
-        <b>Телефон: </b>
-          <%= phone_to '9201531212', '+7 (920) 153-12-12',
-                                                          country_code: "7",
-                                                          class: 'text-decoration-none text-reset' %>
-        <br>
-        <b>Email: </b>
-          <%= mail_to 'kbsv69@mail.ru', 'kbsv69@mail.ru',
-                                                          class: 'text-decoration-none text-reset' %>
+    <div class="container">
+      <div class="row ">
+        <div class="col-sm-6 col-md-5 col-lg-6 column-left">
+
+          <b>Адрес: </b>
+            <%= link_to '216км трассы М10, д. Миронежье, стоянка «Дубрава»','https://yandex.ru/maps/-/CCUC7OxGkA',
+                                                           target: '_blank',
+                                                            class: 'text-decoration-none text-reset' %>
+          <br>
+          <b>Часы работы: </b>9:00 - 20:00 ПН-СБ
+          <br>
+          <b>Телефон: </b>
+            <%= phone_to '9201531212', '+7 (920) 153-12-12',
+                                                            country_code: "7",
+                                                            class: 'text-decoration-none text-reset' %>
+          <br>
+          <b>Email: </b>
+            <%= mail_to 'kbsv69@mail.ru', 'kbsv69@mail.ru',
+                                                            class: 'text-decoration-none text-reset' %>
         </div>
 
-        <div class="col-right">
+        <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0 text-end column-right">
+
           <%= link_to 'Регистрационный номер свидетельства','https://rosavtotransport.ru/ru/activities/tachograph-control-eu/register-asc/?action=organization&district=69&id=864',
                                                           target: '_blank',
                                                            class: 'text-decoration-none text-reset' %>
@@ -48,13 +50,14 @@
       </div>
     </div>
 
+
     <div class="arrow-up"
        <%= link_to image_tag("arrow-up-circle-fill.svg", size: '30'),'#', id: "scrollToTopBtn",class: 'arrow-image' %>
     </div>
   </div>
 
+
   <div class="footer-bottom">
-    <div class="footer-bottom-info">
     Copyright @2023 All rights reserved | This website made by NRN
   </div>
 </footer>

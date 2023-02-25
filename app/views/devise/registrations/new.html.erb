@@ -31,11 +31,9 @@
             <div class="field my-2">
               <%= f.password_field :password,
                                    autocomplete: t('devise.autocomplete.new-password'),
-                                   placeholder: t('devise.autocomplete.new-password') %>
+                                   placeholder: t('devise.autocomplete.password') %>
 
-              <% if @minimum_password_length %></br>
-              <em><%=   "#{@minimum_password_length} #{t('devise.registrations.edit.minimum')}"   %></em>
-              <% end %>
+
             </div>
 
             <div class="field my-1">

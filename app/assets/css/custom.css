@@ -9,6 +9,7 @@
 @import url('footer.css');
 @import url('form.css');
 @import url('animate.css');
+@import url('auth.css');
 
 .img_tag-style {
     border-radius: 50px;
@@ -29,3 +30,5 @@
     margin-left: 18%;
 
 }
+
+

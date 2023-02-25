@@ -19,5 +19,13 @@ module Authorization
     def store_user_location!
       store_location_for(:user, request.fullpath)
     end
+
+    def set_locale
+      I18n.locale = params[:locale]
+    end
+
+    def self.default_url_options(options = {})
+      options.merge({ locale: I18n.locale })
+    end
   end
 end
