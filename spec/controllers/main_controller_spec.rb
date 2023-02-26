@@ -4,7 +4,6 @@ require 'rails_helper'
 
 RSpec.describe MainController, type: :controller do
   describe 'GET #index' do
-
     before { get :index }
 
     context 'required output per page' do

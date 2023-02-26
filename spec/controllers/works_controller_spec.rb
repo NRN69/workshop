@@ -11,7 +11,7 @@ RSpec.describe WorksController, type: :controller do
     {
       work: {
         title: 'Works 1',
-        body: 'Information about Work 1',
+        body: 'Information about Work 1'
       }
     }
   end

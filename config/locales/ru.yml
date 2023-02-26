@@ -77,7 +77,7 @@ ru:
 
   errors:
     messages:
-      content_type_invalid: "должны иметь формат PDF, DOC, DOCX, XLS, XLSX, JPG"
+      content_type_invalid: "должны быть в формате PDF, DOC, DOCX, XLS, XLSX, JPG"
       file_size_out_of_range: "не должны превышать 100Mb"
       limit_out_of_range: "не могу быть загружены в количестве больше шести"
       carrierwave_processing_error: "Не удается изменить размер изображения."

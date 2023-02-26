@@ -68,13 +68,6 @@
 
               <ul class="dropdown-menu">
                 <li>
-                  <%= link_to t('menu.auth.sign_in.edit'), edit_user_registration_path,
-                              class: 'dropdown-item' %>
-                </li>
-
-                <li><hr class="dropdown-divider"></li>
-
-                <li>
                   <%= link_to t('menu.auth.sign_in.exit'), destroy_user_session_path,
                               class: 'dropdown-item',
                               data: {turbo_method: :delete} %>
@@ -130,13 +123,6 @@
               <% end %>
 
               <ul class="dropdown-menu">
-                <li>
-                  <%= link_to t('menu.auth.sign_in.edit'), edit_user_registration_path,
-                              class: 'dropdown-item' %>
-                </li>
-
-                <li><hr class="dropdown-divider"></li>
-
                 <li>
                   <%= link_to t('menu.auth.sign_in.exit'), destroy_user_session_path,
                               class: 'dropdown-item',

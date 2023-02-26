@@ -1,5 +1,5 @@
 
-@media only screen and (max-width: 1399px) {
+@media only screen and (max-width: 1399.98px) {
 
     .carousel-item h1 {
         font-size: 560%;
@@ -75,7 +75,7 @@
 }
 
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1199.98px) {
 
     .snip p {
         font-size: 90%;
@@ -201,7 +201,7 @@
     }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 991.98px) {
 
     .carousel-item {
         height: 250px;
@@ -317,7 +317,7 @@
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
 
     ul.nav {
         width: 7%;
@@ -470,7 +470,7 @@
     }
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 575.98px) {
 
     .carousel {
         display: none;
@@ -581,6 +581,117 @@
 
     .footer-bottom {
         font-size: 9px;
+    }
+    .snip p {
+        font-size: 70%;
+    }
+
+    .snip h2 {
+        font-size: 100%;
+    }
+}
+@media only screen and (max-width: 365.98px) {
+    .snip p {
+        font-size: 80%;
+    }
+
+    .snip h2 {
+        font-size: 120%;
+    }
+
+    .card {
+        width: 90%;
+        margin-left: 2%;
+        height: 100%;
+    }
+
+    .blog-index-image {
+        width: 380px;
+        height: 220px;
+    }
+
+    .work-index-image {
+        width: 380px;
+        height: 220px;
+    }
+
+    .work-image-body {
+        width: 20px;
+        height:20px;
+        margin-left: -4%;
+        margin-top: -1%;
+    }
+
+    .work-body-text{
+        font-size: 60%;
+        margin-top: -10%;
+        margin-left: 10%;
+        line-height: 28px;
+    }
+
+    .img-fluid .image-work-show {
+        margin-left: 3%;
+        margin-top: 0;
+        width: 300px;
+        height: 220px;
+    }
+
+    .user-menu {
+        display: block;
+        margin-top: -11%;
+        margin-left: 120px;
+
+    }
+
+    .user-menu .user-user {
+        margin-left: 45px;
+        margin-top: -4%;
+    }
+
+    .footer-top {
+        font-size: 2px;
+        height: 70px;
+    }
+
+    .footer-top .arrow-up {
+        margin-top: -10.7%;
+        margin-left: 46%;
+    }
+
+    .footer-bottom {
+        font-size: 5px;
+    }
+
+    .img-fluid .image-blog-show {
+        width: 300px;
+        height: 220px;
+        margin-left: 2%;
+    }
+
+    .blog-body-text{
+        font-size: 40%;
+        margin-top: -8%;
+        margin-left: 10%;
+        line-height: 12px;
+        width: 100%;
+    }
+
+    .blog-title strong {
+        font-size: 100%;
+    }
+
+    .contacts h4 {
+        font-size: 55%;
+        line-height: 5px;
+    }
+
+    .contacts {
+        line-height: 10px;
+        margin-left: -5%;
+    }
+
+    .contacts h1 {
+        font-size: 110%;
     }
 }
 
