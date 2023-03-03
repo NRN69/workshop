@@ -1,0 +1,17 @@
+<% unless object.file.url.nil? %>
+  <div class="container">
+    <div class="row">
+      <hr>
+      <div class="col-lg-6 col-md-6 mb-4">
+        <div class="mb-1">
+
+          <% filetype object.file.url %>
+          <%=  link_to image_tag(@filetype, size: '24'), object.file.url %>
+          <%= filename object.file.url  %>
+
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+<%  end %>
