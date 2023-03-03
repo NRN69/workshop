@@ -6,7 +6,7 @@
         <div class="mb-1">
 
           <% filetype object.file.url %>
-          <%=  link_to image_tag(@filetype, size: '24'), object.file.url %>
+          <%=  link_to image_tag(@filetype, size: '24'), object.file.url, target: '_blank' %>
           <%= filename object.file.url  %>
 
           <br>
